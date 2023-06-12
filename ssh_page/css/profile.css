@@ -1,7 +1,16 @@
+body {
+    background-color: #fffbee;
+}
+
 main {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #929292;
+    height: 70vh;
+    border-radius: 8px;
+    margin-top: 50px;
 }
 
 main .left_contents {
