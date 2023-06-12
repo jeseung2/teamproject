@@ -1,0 +1,68 @@
+/*========================================================================*/
+/*header*/
+
+header {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 30px;
+    background-color: #ffe344;
+    text-align: center;
+    line-height: 50px;
+}
+
+header .first_block {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header .first_block .logo {
+    width: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    height: 150px;
+    font-size: 30px;
+    line-height: 150px;
+    text-align: center;
+}
+
+header .first_block ul {
+    float: right;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+}
+
+header .first_block ul li {
+    display: inline-block;
+    width: 25%;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+/* header .first_block ul li::after {
+    content: "/";
+} */
+header .first_block ul li:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+header ul {
+    background-color: #ffe344;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 70px;
+
+}
+
+header ul>li {
+    float: left;
+    width: 20%;
+    cursor: pointer;
+}
+
+header ul>li:hover {
+    text-decoration: underline;
+}

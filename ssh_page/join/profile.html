@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="./../css/header.css">
+    <link rel="stylesheet" href="./../css/profile.css">
+    <link rel="stylesheet" href="./../css/reset.css">
+</head>
+
+<body>
+    <header>
+        <div class="first_block">
+            <div class="logo">Logo</div>
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>장바구니</li>
+                <li>고객센터</li>
+            </ul>
+        </div>
+        <ul>
+            <li>간식·사료</li>
+            <li>장난감</li>
+            <li>리빙·패션</li>
+            <li>산책·케어</li>
+            <li>커뮤니티</li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="left_contents">
+            <ul>
+                <li>
+                    <a class="checking" href="/ssh_page/join/profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="./details.html">Details</a>
+                </li>
+                <li>
+                    <a href="./adress.html">Address</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="right_contents">
+            <figure>
+                <figcaption>Profile</figcaption>
+                <table>
+                    <!-- <colgroup>
+                        <col width="100">
+                        <col width="1100px">
+                    </colgroup> -->
+                    <form action="">
+                        <tr>
+                            <th><label for="user_name">이름</label></th>
+                            <td><input type="text" name="user_name" placeholder="이름을 입력해주세요" required="required"
+                                    minlength="3"></td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="user_birth">생년월일</label></th>
+                            <td class="user_birth">
+                                <select class="user_year" required>
+                                    <option disabled selected>선택</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                </select>
+                                <select class="user_month" required>
+                                    <option disabled selected>선택</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select class="user_day" required>
+                                    <option disabled selected>선택</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="user_num">핸드폰 번호</label></th>
+                            <td><input type="tel" name="user_num" placeholder="- 없이 입력해주세요"></td>
+                        </tr>
+                    </form>
+                </table>
+            </figure>
+            <input type="button" value="Next">
+        </div>
+    </main>
+
+    <!-- <footer> <ul> <li>information</li> <li>information</li>
+        <li>information</li> <li>information</li> <li>information</li> </ul> <ul>
+        <li>information</li> <li>information</li> <li>information</li>
+        <li>information</li> <li>information</li> </ul> </footer> -->
+</body>
+<style>
+    /*========================================================================*/
+    /*main*/
+
+
+
+    /*========================================================================*/
+    /*footer*/
+    /* footer {
+        width: 100%;
+        height: 200px;
+        background-color: gray;
+        color: #fff;
+        display: block;
+    }
+
+    footer ul {
+        float: left;
+    } */
+</style>
+
+</html>
