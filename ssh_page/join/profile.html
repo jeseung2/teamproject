@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>join</title>
-    <link rel="stylesheet" href="./../css/header.css">
-    <link rel="stylesheet" href="./../css/profile.css">
-    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="../../common_page/common.css">
+    <link rel="stylesheet" href="../../common_page/header.css">
+    <link rel="stylesheet" href="../../common_page/reset.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
 </head>
 
 <body>
@@ -17,34 +19,34 @@
         <nav>
             <ul class="menu_list">
                 <li>
-                    <a href=""><img src="../image/login_img.png" alt=""> 로그인</a>
+                    <a href=""><img src="../../common_page/image/login_img.png" alt=""> 로그인</a>
                 </li>
                 <li>
-                    <a href=""><img src="../image/join_img.png" alt=""> 회원가입</a>
+                    <a href=""><img src="../../common_page/image/join_img.png" alt=""> 회원가입</a>
                 </li>
                 <li>
-                    <a href=""><img src="../image/cart_img.png" alt=""> 장바구니</a>
+                    <a href=""><img src="../../common_page/image/cart_img.png" alt=""> 장바구니</a>
                 </li>
                 <li>
-                    <a href=""><img src="../image/customer_service_img.png" alt=""> 고객센터</a>
+                    <a href=""><img src="../../common_page/image/customer_service_img.png" alt=""> 고객센터</a>
                 </li>
             </ul>
 
             <ul class="gnb_list">
                 <li>
-                    <a href="#"><img src="../image/food_img.png" alt="">간식&#183;사료</a>
+                    <a href="#"><img src="../../common_page/image/food_img.png" alt="">간식&#183;사료</a>
                 </li>
                 <li>
-                    <a href="#"><img src="../image/toy_img.png" alt="">장난감</a>
+                    <a href="#"><img src="../../common_page/image/toy_img.png" alt="">장난감</a>
                 </li>
                 <li>
-                    <a href="#"><img src="../image/living_img.png" alt="">리빙&#183;패션</a>
+                    <a href="#"><img src="../../common_page/image/living_img.png" alt="">리빙&#183;패션</a>
                 </li>
                 <li>
-                    <a href="#"><img src="../image/stroll_img.png" alt="">산책&#183;케어</a>
+                    <a href="#"><img src="../../common_page/image/stroll_img.png" alt="">산책&#183;케어</a>
                 </li>
                 <li>
-                    <a href="#"><img src="../image/community_img.png" alt="">커뮤니티</a>
+                    <a href="#"><img src="../../common_page/image/community_img.png" alt="">커뮤니티</a>
                 </li>
             </ul>
         </nav>
@@ -132,6 +134,20 @@
                         <tr>
                             <th><label for="user_num">핸드폰 번호</label></th>
                             <td><input type="tel" name="user_num" placeholder="- 없이 입력해주세요"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="user_email">이메일 주소</label></th>
+                            <td>
+                                <input type="email" name="user_email" class="user_email">
+                                <select class="domain_list" required>
+                                    <option disabled value="" selected>선택</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="google.com">google.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="custom">직접 입력</option>
+                                </select>
+                            </td>
                         </tr>
                     </form>
                 </table>
