@@ -1,0 +1,50 @@
+main {
+    min-width: 1200px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/* 메인 배너 시작 */
+main .banner {
+    margin-bottom: 20px;
+}
+
+main .banner img {
+    width: 1000px;
+    height: 200px;
+}
+
+/* 베스트셀러 상품 */
+
+.bestseller {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bestseller_item {
+    max-width: 200px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+
+/* 푸터 시작 */
+
+footer {
+    background-color: #333333;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
