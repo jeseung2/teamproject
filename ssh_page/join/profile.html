@@ -133,6 +133,20 @@
                             <th><label for="user_num">핸드폰 번호</label></th>
                             <td><input type="tel" name="user_num" placeholder="- 없이 입력해주세요"></td>
                         </tr>
+                        <tr>
+                            <th><label for="user_email">이메일 주소</label></th>
+                            <td>
+                                <input type="email" name="user_email" class="user_email">
+                                <select class="domain_list" required>
+                                    <option disabled value="" selected>선택</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="google.com">google.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="custom">직접 입력</option>
+                                </select>
+                            </td>
+                        </tr>
                     </form>
                 </table>
             </figure>
