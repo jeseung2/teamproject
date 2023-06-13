@@ -1,21 +1,17 @@
 main {
-    min-width: 1200px;
-    max-width: 1500px;
-    /* height: 80vh; */
-    margin: auto;
     background-color: white;
 }
 
-/* 메인 배너 시작 */
+/* 배너 영역 시작 */
 main .banner_wrap {
     height: 400px;
     margin: auto;
     margin-bottom: 20px;
 }
 
-/* main .banner {
-    text-align: center;
-} */
+main .banner {
+    position: relative;
+}
 
 main .banner img {
     object-fit: cover;
@@ -24,6 +20,27 @@ main .banner img {
     height: 400px;
     border-radius: 10px;
 }
+
+main .banner span {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+}
+
+main .banner .arrow_left {
+    left: 10px
+}
+
+main .banner .arrow_right {
+    right: 10px
+}
+
+main .banner span img {
+    width: 80px;
+    height: 80px;
+}
+
+/* 배너 영역 끝 */
 
 
 
@@ -76,17 +93,107 @@ main .bestseller_item img {
     height: 200px;
 }
 
+/* 베스트 셀러 영역 끝 */
 
 
-/* 푸터 시작 */
+/* 사이트 홍보 영역 시작 */
+main .promotion_wrap {
+    height: 400px;
+    background-color: lightgreen;
+}
 
-footer {
-    background-color: #333333;
+/* 사이트 홍보 영역 끝 */
+
+
+/* 동영상 영역 시작 */
+main .video_wrap {
+    height: 400px;
+    background-color: lightpink;
+}
+
+main .video {
+    /* display: inline-block; */
+    /* margin: auto; */
+    width: 400px;
+    height: 300px;
+    background-color: blueviolet;
+}
+
+/* 동영상 영역 끝 */
+
+/* ===== footer 시작 ====== */
+footer .footer_wrap {
+    box-sizing: border-box;
     padding: 20px;
     color: #ffffff;
     text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+footer .ft_info1,
+footer .ft_info2 {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    margin: 40px auto 10px;
+    margin-left: 100px;
+    /* background-color: #ffffff; */
 }
 
 footer p {
-    margin: 0;
+    white-space: pre-line;
 }
+
+/* ===== footer info 1 시작 ===== */
+footer .ft_info1 {
+    float: left;
+    text-align: left;
+}
+
+footer .ft_info1 h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+footer .ft_info1 span,
+footer .ft_info1 p {
+    color: rgb(95, 95, 95);
+    margin: 5px;
+}
+
+footer .ft_info1 p {
+    margin: 20px auto;
+    font-size: 14px;
+}
+
+footer .ft_info1 span {
+    font-weight: bold;
+}
+
+/* ===== footer info 2 시작 ===== */
+footer .ft_info2 {
+    float: right;
+    margin-right: 100px;
+}
+
+footer .ft_info2 p {
+    color: rgb(95, 95, 95)
+}
+
+footer .ft_info2 ul {
+    margin: 40px auto;
+}
+
+footer .ft_info2 ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* ft copy 영역 시작 */
+footer .ft_copy {
+    clear: both;
+}
+
+/* ===== footer 끝 ===== */
