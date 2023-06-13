@@ -108,7 +108,7 @@ main .promotion_wrap {
 /* 동영상 영역 시작 */
 main .video_wrap {
     height: 400px;
-    background-color: lightpink;
+    /* background-color: lightpink; */
 }
 
 main .video {
@@ -121,23 +121,23 @@ main .video {
 
 /* 동영상 영역 끝 */
 
+
 /* ===== footer 시작 ====== */
 footer .footer_wrap {
     box-sizing: border-box;
     padding: 20px;
     color: #ffffff;
     text-align: center;
-    display: inline-block;
+    position: relative;
     width: 100%;
 }
 
 footer .ft_info1,
 footer .ft_info2 {
+    position: absolute;
     display: inline-block;
     width: 400px;
     height: 200px;
-    margin: 40px auto 10px;
-    margin-left: 100px;
     /* background-color: #ffffff; */
 }
 
@@ -147,12 +147,12 @@ footer p {
 
 /* ===== footer info 1 시작 ===== */
 footer .ft_info1 {
-    float: left;
+    left: 5%;
     text-align: left;
 }
 
 footer .ft_info1 h3 {
-    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 
@@ -173,8 +173,7 @@ footer .ft_info1 span {
 
 /* ===== footer info 2 시작 ===== */
 footer .ft_info2 {
-    float: right;
-    margin-right: 100px;
+    right: 5%;
 }
 
 footer .ft_info2 p {
@@ -193,7 +192,11 @@ footer .ft_info2 ul li {
 
 /* ft copy 영역 시작 */
 footer .ft_copy {
-    clear: both;
+    margin-top: 100px auto 20px;
+}
+
+footer .ft_copy img {
+    width: 80px;
 }
 
 /* ===== footer 끝 ===== */
