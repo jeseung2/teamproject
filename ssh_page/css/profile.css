@@ -1,12 +1,14 @@
 main {
     width: 100%;
+    min-width: 1200px;
     max-width: 1500px;
-    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 50px auto;
     background-color: #fff;
-    border: 1px solid #929292;
     height: 70vh;
-    border-radius: 8px;
-    margin-top: 50px;
+    padding: 0 50px;
+    border-top: 2px solid #ffa900;
+    border-bottom: 2px solid #ffa900;
 }
 
 main .left_contents {
@@ -110,10 +112,17 @@ main .right_contents table tr .user_birth select {
 input[type=button] {
     width: 100px;
     height: 50px;
-    background-color: #ffe344;
     border: none;
-    color: #ffa900;
+    border: 1px solid #ffa900;
+    /* color: #ffa900; */
+    background-color: #fff;
     border-radius: 8px;
     cursor: pointer;
     float: right;
+}
+
+input[type=button]:hover {
+    background-color: #fffbee;
+    color: #ffa900;
+
 }

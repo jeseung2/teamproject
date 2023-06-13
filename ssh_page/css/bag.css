@@ -1,0 +1,72 @@
+main {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    background-color: #fff;
+    height: 70vh;
+    padding: 0 50px;
+    border-top: 2px solid #ffa900;
+    border-bottom: 2px solid #ffa900;
+}
+
+.amount {
+    float: right;
+    font-weight: bold;
+    display: block;
+    line-height: 50px;
+    width: 100px;
+}
+
+main ul>li {
+    width: 100%;
+    height: 100px;
+    /* background-color: #fff; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    padding: 15px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+main ul>li span,
+main ul>li .price {
+    width: 30%;
+    line-height: 100px;
+    margin-left: 50px;
+}
+
+main ul>li img {
+    width: 100px;
+    height: 100px;
+    background-color: #ffa900;
+    vertical-align: middle;
+}
+
+main ul>li input[type=button] {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border: 1px solid#ffa900;
+    background-color: #fff;
+    /* color: #ffa900; */
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    margin: calc((100px - 50px)/2) 0;
+}
+
+main ul>li input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: calc((100px - 20px)/2) 10px;
+    border-left: 1px solid;
+}
+
+input[type=button]:hover {
+    background-color: #fffbee;
+    color: #ffa900;
+
+}
