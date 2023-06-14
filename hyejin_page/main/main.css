@@ -58,8 +58,8 @@ main .bestseller_wrap h1 {
 main .bestseller {
     margin: 50px auto;
     width: 1200px;
-    height: 400px;
-    background-color: rgb(91, 103, 215);
+    height: 300px;
+    /* background-color: rgb(91, 103, 215); */
     padding: 20px;
 }
 
@@ -84,13 +84,38 @@ main .bestseller_item {
     box-sizing: border-box;
     width: 250px;
     height: 250px;
-    margin: auto;
+    margin: 10px auto;
+    padding: 10px;
     vertical-align: middle;
 }
 
 main .bestseller_item img {
+    box-sizing: border-box;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
+}
+
+main .bestseller_item:hover img {
+    border: solid 2px darkorange;
+}
+
+main .bestseller_item h3 {
+    margin: 5px 0;
+}
+
+main .bestseller_item .sale_info {
+    color: red;
+    font-weight: bold;
+}
+
+main .bestseller_item .normal_pr {
+    color: gray;
+    text-decoration: line-through;
+}
+
+main .bestseller_item .present_pr {
+    font-weight: bold;
 }
 
 /* 베스트 셀러 영역 끝 */
@@ -101,6 +126,23 @@ main .promotion_wrap {
     height: 400px;
     background-color: lightgreen;
 }
+@keyframes slider {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+main .promotion img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    animation-duration: 3s;
+    animation-name: slider;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 /* 사이트 홍보 영역 끝 */
 
@@ -108,13 +150,14 @@ main .promotion_wrap {
 /* 동영상 영역 시작 */
 main .video_wrap {
     height: 400px;
+    text-align: center;
     /* background-color: lightpink; */
 }
 
 main .video {
-    /* display: inline-block; */
-    /* margin: auto; */
-    width: 400px;
+    display: inline-block;
+    margin: 50px auto;
+    width: 500px;
     height: 300px;
     background-color: blueviolet;
 }
@@ -130,6 +173,7 @@ footer .footer_wrap {
     text-align: center;
     position: relative;
     width: 100%;
+    margin-top: 50px;
 }
 
 footer .ft_info1,
@@ -192,7 +236,7 @@ footer .ft_info2 ul li {
 
 /* ft copy 영역 시작 */
 footer .ft_copy {
-    margin-top: 100px auto 20px;
+    padding: 100px 0 50px;
 }
 
 footer .ft_copy img {
