@@ -1,0 +1,86 @@
+/* common */
+.fs14 {
+    font-size: 14px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* layout */
+h1,
+h2 {
+    color: #ffa900;
+    margin: 1em;
+}
+
+form {
+    min-width: 1200px;
+    max-width: 1480px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+td {
+    width: 100vh;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select[id="payment-method"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="tel"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #ffe344;
+    color: #ffa900;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+}
+
+form section div p {
+    overflow: auto;
+    background-color: #fff;
+    border: 1px solid;
+    height: 150px;
+}
