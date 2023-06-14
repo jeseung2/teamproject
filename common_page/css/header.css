@@ -100,3 +100,80 @@ header nav .gnb_list>li img {
 header nav .gnb_list>li:hover>a {
     font-size: 17px;
 }
+/* footer CSS */
+footer .footer_wrap {
+    box-sizing: border-box;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer .ft_info1,
+footer .ft_info2 {
+    position: absolute;
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    /* background-color: #ffffff; */
+}
+
+footer p {
+    white-space: pre-line;
+}
+
+/* ===== footer info 1 시작 ===== */
+footer .ft_info1 {
+    left: 5%;
+    text-align: left;
+}
+
+footer .ft_info1 h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer .ft_info1 span,
+footer .ft_info1 p {
+    color: rgb(95, 95, 95);
+    margin: 5px;
+}
+
+footer .ft_info1 p {
+    margin: 20px auto;
+    font-size: 14px;
+}
+
+footer .ft_info1 span {
+    font-weight: bold;
+}
+
+/* ===== footer info 2 시작 ===== */
+footer .ft_info2 {
+    right: 5%;
+}
+
+footer .ft_info2 p {
+    color: rgb(95, 95, 95)
+}
+
+footer .ft_info2 ul {
+    margin: 40px auto;
+}
+
+footer .ft_info2 ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* ft copy 영역 시작 */
+footer .ft_copy {
+    padding: 100px 0 50px;
+}
+
+footer .ft_copy img {
+    width: 80px;
+}

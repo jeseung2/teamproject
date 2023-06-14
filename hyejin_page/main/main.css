@@ -75,6 +75,7 @@ main .bestseller_list h2 {
     line-height: 50px;
     border-radius: 50%;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 /* 베스트셀러 상품 목록 */
@@ -98,6 +99,18 @@ main .bestseller_item img {
 
 main .bestseller_item:hover img {
     border: solid 2px darkorange;
+    animation-name: item_hover;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes item_hover {
+        from {
+            border-color: white;
+        }
+    
+        to {
+            border-color: darkorange;
+        }
 }
 
 main .bestseller_item h3 {
@@ -123,27 +136,54 @@ main .bestseller_item .present_pr {
 
 /* 사이트 홍보 영역 시작 */
 main .promotion_wrap {
+    margin: 20px 0;
+        padding: 20px;
     height: 400px;
-    background-color: lightgreen;
-}
-@keyframes slider {
-    0% {
-
+    /* background-color: lightgreen; */
+        text-align: center;
     }
-    100% {
+        .promotion {
+            position: relative;
+        }
+    
+        main .promotion1 img {
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        main .promotion1 img:nth-of-type(1) {
+            width: 600px;
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            animation-name: left_to_right;
+    
+    
+        main .promotion1 img:nth-of-type(2) {
+            position: absolute;
+            width: 250px;
+            right: 300px;
+            top: 30px;
+            animation-name: right_to_left;
+}
+@keyframes left_to_right {
+    from {
+        margin-left: -30px;
 
+
+        to {
+            margin-right: 80px;
+}
+@keyframes right_to_left {
+    from {
+        margin-right: -30px;
     }
-}
-main .promotion img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    animation-duration: 3s;
-    animation-name: slider;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
+                to {
+                    margin-left: 80px;
+                }
+                }
 /* 사이트 홍보 영역 끝 */
 
 
