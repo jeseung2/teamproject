@@ -1,0 +1,107 @@
+main {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    background-color: #fff;
+    border-top: 2px solid #ffa900;
+    border-bottom: 2px solid #ffa900;
+}
+
+main table {
+    width: 100%;
+    height: auto;
+}
+
+/*========================================================================*/
+/*thead*/
+table thead {
+    height: 50px;
+    line-height: 46px;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #ffa900;
+}
+
+
+main table thead tr th,
+main table tbody tr td {
+    width: 25%;
+}
+
+main table thead tr th:first-child,
+main table tbody tr td:first-child {
+    width: 50px;
+}
+
+main table thead tr th input[type=checkbox],
+main table tbody tr td input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+/*========================================================================*/
+/*tbody*/
+
+table tbody {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+main table tbody tr {
+    display: block;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+main table tbody tr:last-child {
+    border: none;
+}
+
+main table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+main table tbody tr td {
+    line-height: 100px;
+    text-align: center;
+}
+
+main table tbody tr td .text-ellipsis {
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 255px;
+    float: right;
+}
+
+main table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+main table tbody tr td input[type=button] {
+    padding: 3px;
+    border: none;
+    display: block;
+    border: 1px solid#ffa900;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+main table tbody tr td:nth-child(3) {
+    line-height: 40px;
+}
+
+main table tbody tr td input[type=button]:hover {
+    background-color: #fffbee;
+    color: #ffa900;
+
+}
