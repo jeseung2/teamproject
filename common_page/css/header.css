@@ -100,6 +100,9 @@ header nav .gnb_list>li img {
 header nav .gnb_list>li:hover>a {
     font-size: 17px;
 }
+
+
+
 /* footer CSS */
 footer .footer_wrap {
     box-sizing: border-box;
