@@ -13,53 +13,55 @@
 </head>
 
 <body>
+    <div id="wrap">
 
-    <header>
-        <nav>
-            <div class="menu_list">
-                <img src="./../../common_page/image/logo.png" alt="로고" class="logo">
-                <ul>
+        <header>
+            <nav>
+                <div class="menu_list">
+                    <img src="./../../common_page/image/logo.png" alt="로고" class="logo">
+                    <ul>
+                        <li>
+                            <a href=""><img src="../../common_page/image/login_img.png" alt=""> 로그인</a>
+                        </li>
+                        <li>
+                            <a href="../join/profile.html"><img src="../../common_page/image/join_img.png" alt="">
+                                회원가입</a>
+                        </li>
+                        <li>
+                            <a href="../bag/bag.html"><img src="../../common_page/image/cart_img.png" alt=""> 장바구니</a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../../common_page/image/customer_service_img.png" alt=""> 고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="gnb_list">
                     <li>
-                        <a href=""><img src="../../common_page/image/login_img.png" alt=""> 로그인</a>
+                        <a href="#"><img src="../../common_page/image/food_img.png" alt="">간식&#183;사료</a>
                     </li>
                     <li>
-                        <a href="../join/profile.html"><img src="../../common_page/image/join_img.png" alt="">
-                            회원가입</a>
+                        <a href="#"><img src="../../common_page/image/toy_img.png" alt="">장난감</a>
                     </li>
                     <li>
-                        <a href="../bag/bag.html"><img src="../../common_page/image/cart_img.png" alt=""> 장바구니</a>
+                        <a href="#"><img src="../../common_page/image/living_img.png" alt="">리빙&#183;패션</a>
                     </li>
                     <li>
-                        <a href=""><img src="../../common_page/image/customer_service_img.png" alt=""> 고객센터</a>
+                        <a href="#"><img src="../../common_page/image/stroll_img.png" alt="">산책&#183;케어</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../../common_page/image/community_img.png" alt="">커뮤니티</a>
                     </li>
                 </ul>
-            </div>
-
-            <ul class="gnb_list">
-                <li>
-                    <a href="#"><img src="../../common_page/image/food_img.png" alt="">간식&#183;사료</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../common_page/image/toy_img.png" alt="">장난감</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../common_page/image/living_img.png" alt="">리빙&#183;패션</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../common_page/image/stroll_img.png" alt="">산책&#183;케어</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../common_page/image/community_img.png" alt="">커뮤니티</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            </nav>
+        </header>
         <section class="main">
 
             <form action="" method="">
                 <h1 class="text-center">주문/결제</h1>
+                <hr>
                 <div>
-                    
+
                 </div>
 
                 <!--배송지정보-->
@@ -120,6 +122,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <hr>
 
                 <!-- 비회원 주문조회 비밀번호-->
 
@@ -130,22 +133,42 @@
                             <label for="password">비밀번호</label>
                         </th>
                         <td>
-                            <input type="password" id="password" name="password" placeholder="영문대소문자/숫자/특수문자 중 2가지 이상 조합, 6자~16자" required>
+                            <input type="password" id="password" name="password"
+                                placeholder="6자~16자" required minlength="6" maxlength="16">
                         </td>
                     </tr>
                 </table>
+                <hr>
 
                 <!-- 주문상품 -->
 
                 <h2>주문상품</h2>
-                <div>
-
+                <div class="desc">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="#" class="thumb">
+                                    <img src="	https://via.placeholder.com/120x120" alt="상품이미지">
+                                </a>
+                            </td>
+                            <td>
+                                <h3 class="name">상품명</h3>
+                                <a href="#" class="">상품설명</a>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><ins class="dis-price">상품가격</ins></li>
+                                    <li><span class="free-delivery">배송비</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <h6 class="rating star4">상품평</h6>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <ul>
-                    <li>상품명</li>
-                    <li>수량</li>
-                    <li>가격</li>
-                </ul>
+                <hr>
+
                 <!--약관 동의-->
 
                 <section>
@@ -175,6 +198,40 @@
                 </section>
             </form>
         </section>
+        <footer>
+            <div class="footer_wrap">
+                <div class="ft_info1">
+                    <h3>주문/배송 문의: 010-1254-9478</h3>
+                    <h3>대량 구매 문의: tlsgPwls@gmail.com</h3>
+                    <h3>마케팅 제휴 문의: tlsgPwls@gmail.com</h3>
+                    <p><span>영업시간</span>
+                        월 ~ 금: 9:00 - 18:00
+                        토: 9:00 - 12:00
+                        일요일 및 공휴일: 휴무
+                    </p>
+                </div>
+                <div class="ft_info2">
+                    <p>상호 : 단독/DanDog 대표 : 연제승
+                        주소 : 경기도 광명시 일직로 43 C동 410호
+                        사업자번호 : 359-86-00037
+                        통신판매업신고 : 2015-경기광명-0274
+                        대표번호 : 02-899-7892 이메일 : gaenim@ysfnc.kr
+                    </p>
+                    <ul>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="ft_copy">
+                    <a href="#">
+                        <img src="../../common_page/image/logo.png" alt="사이트 로고">
+                    </a>
+                    <p>&copy; 2023 웹사이트. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
