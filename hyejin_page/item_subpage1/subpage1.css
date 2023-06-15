@@ -1,0 +1,68 @@
+main * {
+    text-align: center;
+}
+
+/* ===== 상단 카테고리, 정렬 영역 시작 ===== */
+
+main .item_sort * {
+    display: inline-block;
+}
+
+main .cate_wrap,
+main .item_sort_wrap {
+    padding: 10px;
+}
+
+.cate_wrap {
+    margin: 50px 0;
+}
+
+main .item_sort li,
+main .item_sort p {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    color: #ff9100;
+    font-weight: bold;
+    border: #ffa900 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .item_sort ul {
+    position: relative;
+    right: 35%;
+}
+
+main .item_sort p {
+    position: relative;
+    left: 35%;
+}
+
+
+/* ===== 상품 목록 영역 시작 ===== */
+
+main .content_wrap {
+    padding: 20px;
+}
+
+main .content_wrap li {
+    display: inline-block;
+    margin: 30px 20px;
+}
+
+main .normal_item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+main .normal_item img {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
