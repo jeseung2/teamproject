@@ -1,8 +1,9 @@
+/* ===== 메인 시작 ===== */
 main {
     background-color: white;
 }
 
-/* 배너 영역 시작 */
+/* ===== 상단 슬라이드 배너 영역 시작 ===== */
 main .banner_wrap {
     height: 400px;
     margin: auto;
@@ -40,12 +41,12 @@ main .banner span img {
     height: 80px;
 }
 
-/* 배너 영역 끝 */
+/* ===== 상단 슬라이드 배너 영역 끝 ===== */
 
 
 
-/* 베스트셀러 영역 시작 */
-/* 베스트셀러 상단 영역 */
+/* ===== 베스트셀러 영역 시작 ===== */
+/* 베스트셀러 카테고리 목록 */
 main .bestseller_wrap {
     margin-top: 100px;
     text-align: center;
@@ -100,17 +101,17 @@ main .bestseller_item img {
 main .bestseller_item:hover img {
     border: solid 2px darkorange;
     animation-name: item_hover;
-        animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+@keyframes item_hover {
+    from {
+        border-color: white;
     }
-    
-    @keyframes item_hover {
-        from {
-            border-color: white;
-        }
-    
-        to {
-            border-color: darkorange;
-        }
+
+    to {
+        border-color: darkorange;
+    }
 }
 
 main .bestseller_item h3 {
@@ -131,63 +132,71 @@ main .bestseller_item .present_pr {
     font-weight: bold;
 }
 
-/* 베스트 셀러 영역 끝 */
+/* ===== 베스트 셀러 영역 끝 ===== */
 
 
-/* 사이트 홍보 영역 시작 */
+/* ===== 하단 슬라이드 배너 영역 시작 ===== */
+/* 사용자 후기 */
 main .promotion_wrap {
     margin: 20px 0;
-        padding: 20px;
+    padding: 20px;
     height: 400px;
     /* background-color: lightgreen; */
-        text-align: center;
-    }
-        .promotion {
-            position: relative;
-        }
-    
-        main .promotion1 img {
-            animation-duration: 2s;
-            animation-delay: 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-        main .promotion1 img:nth-of-type(1) {
-            width: 600px;
-            position: absolute;
-            left: 300px;
-            top: 100px;
-            animation-name: left_to_right;
-    
-    
-        main .promotion1 img:nth-of-type(2) {
-            position: absolute;
-            width: 250px;
-            right: 300px;
-            top: 30px;
-            animation-name: right_to_left;
+    text-align: center;
 }
+
+.promotion {
+    position: relative;
+}
+
+main .promotion1 img {
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+main .promotion1 img:nth-of-type(1) {
+    width: 600px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    animation-name: left_to_right;
+}
+
+
+main .promotion1 img:nth-of-type(2) {
+    position: absolute;
+    width: 250px;
+    right: 300px;
+    top: 30px;
+    animation-name: right_to_left;
+}
+
 @keyframes left_to_right {
     from {
         margin-left: -30px;
+    }
 
-
-        to {
-            margin-right: 80px;
+    to {
+        margin-right: 80px;
+    }
 }
+
 @keyframes right_to_left {
     from {
         margin-right: -30px;
     }
 
-                to {
-                    margin-left: 80px;
-                }
-                }
-/* 사이트 홍보 영역 끝 */
+    to {
+        margin-left: 80px;
+    }
+}
+
+/* ===== 하단 슬라이드 배너 영역 끝 ===== */
 
 
-/* 동영상 영역 시작 */
+/* ===== 동영상 영역 시작 ===== */
 main .video_wrap {
     height: 400px;
     text-align: center;
@@ -202,7 +211,7 @@ main .video {
     background-color: blueviolet;
 }
 
-/* 동영상 영역 끝 */
+/* ===== 동영상 영역 끝 ===== */
 
 
 /* ===== footer 시작 ====== */
