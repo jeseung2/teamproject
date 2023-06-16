@@ -114,9 +114,7 @@ header nav .gnb_list>li:hover>a {
     font-size: 17px;
 }
 
-
-
-/* footer CSS */
+/* ===== footer 시작 ====== */
 footer .footer_wrap {
     box-sizing: border-box;
     padding: 20px;
@@ -129,7 +127,6 @@ footer .footer_wrap {
 
 footer .ft_info1,
 footer .ft_info2 {
-    position: absolute;
     display: inline-block;
     width: 400px;
     height: 200px;
@@ -142,7 +139,7 @@ footer p {
 
 /* ===== footer info 1 시작 ===== */
 footer .ft_info1 {
-    left: 5%;
+    float: left;
     text-align: left;
 }
 
@@ -160,6 +157,7 @@ footer .ft_info1 p {
 footer .ft_info1 p {
     margin: 20px auto;
     font-size: 14px;
+    line-height: 22px;
 }
 
 footer .ft_info1 span {
@@ -168,11 +166,13 @@ footer .ft_info1 span {
 
 /* ===== footer info 2 시작 ===== */
 footer .ft_info2 {
-    right: 5%;
+    float: right;
 }
 
 footer .ft_info2 p {
-    color: rgb(95, 95, 95)
+    color: rgb(95, 95, 95);
+    font-size: 12px;
+    line-height: 20px;
 }
 
 footer .ft_info2 ul {
@@ -187,10 +187,11 @@ footer .ft_info2 ul li {
 
 /* ft copy 영역 시작 */
 footer .ft_copy {
-    /* padding: 100px 0 50px; */
+    padding: 100px 0 50px;
 }
 
 footer .ft_copy img {
     width: 210px;
-    box-sizing: border-box;
 }
+
+/* ===== footer 끝 ===== */
