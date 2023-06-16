@@ -3,7 +3,7 @@ main {
     min-width: 1200px;
     max-width: 1500px;
     box-sizing: border-box;
-    margin: 50px auto;
+    margin: 115px auto;
     border-top: 2px solid #ffa900;
 }
 
@@ -218,6 +218,12 @@ main .order {
     border-radius: 8px;
     cursor: pointer;
     float: right;
+}
+
+main .order::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 main .order:hover {
