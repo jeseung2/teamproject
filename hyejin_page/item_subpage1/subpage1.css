@@ -58,6 +58,7 @@ main .normal_item {
     height: 300px;
     padding: 10px;
     vertical-align: middle;
+    position: relative;
 }
 
 main .normal_item img {
@@ -65,4 +66,59 @@ main .normal_item img {
     border-radius: 10px;
     width: 250px;
     height: 250px;
+}
+
+main .normal_item img:nth-child(2) {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+main .normal_item:hover img:nth-child(2) {
+    opacity: 1;
+}
+
+main .item_info_wrap h3 {
+    margin: 5px 0;
+}
+
+main .item_info_wrap .sale_info {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+main .item_info_wrap .normal_pr {
+    color: gray;
+    text-decoration: line-through;
+}
+
+main .item_info_wrap .present_pr {
+    font-weight: bold;
+}
+
+/* ===== 상품 목록 영역 끝 ===== */
+
+
+/* ===== 페이지 이동 ===== */
+main .page_shift a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    font-size: 1.2em;
+    border: #ffa900 1px solid;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+main .page_shift a:hover {
+    text-decoration: underline;
+}
+
+main .page_shift a[href="#"] {
+    border: #ff9100 3px solid;
+    font-weight: bold;
 }

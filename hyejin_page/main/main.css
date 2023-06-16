@@ -1,13 +1,13 @@
 /* ===== 메인 시작 ===== */
 main {
     background-color: white;
+    margin-top: 50px;
 }
 
 
 /* ===== 상단 슬라이드 배너 영역 시작 ===== */
 main .banner_wrap {
-    height: 400px;
-    margin: auto;
+    height: 600px;
     margin-bottom: 20px;
 }
 
@@ -27,7 +27,7 @@ main .banner img {
 main .banner span,
 .promotion span {
     position: absolute;
-    top: 35%;
+    top: 40%;
     cursor: pointer;
 }
 
