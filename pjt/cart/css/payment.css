@@ -37,20 +37,19 @@ h2 {
 }
 
 form {
-    margin: 0 auto;
     max-width: 1000px;
     min-width: 1000px;
+    margin: 0 auto;
     border: 1px solid #cccccc;
-    border-radius: 10px;
     padding: 3em;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 label {
-    display: block;
-    font-weight: bold;
     margin-bottom: 10px;
     margin-right: 10px;
+    display: block;
 }
 
 input[type="text"],
@@ -58,43 +57,43 @@ input[type="email"],
 input[type="password"],
 select[id="payment-method"] {
     width: 100%;
-    padding: 10px;
     margin-bottom: 20px;
+    padding: 10px;
     border: 1px solid #cccccc;
-    border-radius: 10px;
-    box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
 
 }
 
 input[type="tel"] {
     width: 10em;
-    padding: 10px;
     margin-bottom: 20px;
+    padding: 10px;
     border: 1px solid #cccccc;
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
     background-color: #ffe344;
     color: #ffa900;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {}
 
 form section div p {
-    overflow: auto;
-    background-color: #fff;
-    border: 1px solid #cccccc;
     height: 150px;
-    border-radius: 10px;
+    border: 1px solid #cccccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: auto;
 }
 
 .thumb>img {
