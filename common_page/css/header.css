@@ -187,9 +187,10 @@ footer .ft_info2 ul li {
 
 /* ft copy 영역 시작 */
 footer .ft_copy {
-    padding: 100px 0 50px;
+    /* padding: 100px 0 50px; */
 }
 
 footer .ft_copy img {
-    width: 80px;
+    width: 210px;
+    box-sizing: border-box;
 }
