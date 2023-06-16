@@ -1,0 +1,147 @@
+main {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    background-color: #fff;
+    height: 650px;
+    padding: 0 50px;
+    border-top: 2px solid #ffa900;
+    border-bottom: 2px solid #ffa900;
+}
+
+main .left_contents {
+    float: left;
+    width: 23%;
+    margin-top: 100px;
+    height: 350px;
+    padding: 50px;
+    display: block;
+    border-right: 1px solid #929292;
+    text-align: center;
+}
+
+/* 
+main .left_contents ul>li.checking {
+    color: #929292;
+    font-size: 18px;
+    line-height: 50px;
+} */
+
+main .left_contents ul>li {
+    color: #999;
+    font-size: 20px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+main .right_contents {
+    float: right;
+    width: 58%;
+    min-width: 500px;
+    height: 500px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+main .right_contents figure {
+    height: 450px;
+}
+
+main .right_contents figure figcaption {
+    font-size: 26px;
+    line-height: 50px;
+    color: #ffa900;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main .right_contents figure table {
+    margin-bottom: 50px;
+}
+
+main .right_contents figure table tr {
+    padding: 5px 0 5px 0;
+    width: 1000px;
+    display: block;
+}
+
+main .right_contents figure table tr th {
+    display: block;
+    width: 100%;
+}
+
+main .right_contents figure table tr th label {
+    font-size: 16px;
+    color: #929292;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0 3px;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+
+main .right_contents figure table tr td {
+    display: block;
+    width: 80%;
+}
+
+main .right_contents table tr td input,
+main .right_contents table tr td select {
+    font-size: 16px;
+    color: #929292;
+    width: 80%;
+    outline: none;
+    padding: 7px;
+}
+
+main .right_contents table tr td .user_email,
+main .right_contents table tr td .domain_list {
+    width: 39.5%;
+    display: inline-block;
+}
+
+main .right_contents table tr .user_birth select {
+    width: 26.9%;
+    display: inline-block;
+}
+
+/* main .right_contents table tr td .domain-list {
+    padding: 7px;
+    height: 37px;
+} */
+
+main .right_contents input[type=button] {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border: 1px solid #ffa900;
+    /* color: #ffa900; */
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+main .right_contents input[type=button]:hover {
+    background-color: #fffbee;
+    color: #ffa900;
+
+}
+
+main .right_contents table tr .agree_all input[type=checkbox] {
+    float: left;
+    margin-top: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main .right_contents table tr .agree_text {
+    width: 80%;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid;
+    padding: 10px;
+}
