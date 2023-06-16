@@ -17,7 +17,10 @@
         <header>
             <nav>
                 <div class="menu_list">
-                    <img src="./../../common_page/image/logo.png" alt="로고" class="logo">
+                    <a href="./../../hyejin_page/main/main.html">
+                        <img src="./../../common_page/image/logo.png" alt="로고" class="logo">
+                    </a>
+                    <input type="search" name="search" id="search" placeholder="검색어를 입력해주세요.">
                     <ul>
                         <li>
                             <a href=""><img src="../../common_page/image/login_img.png" alt=""> 로그인</a>
@@ -75,13 +78,17 @@
 
                         </td>
                         <td>
-                            <img src="../../common_page/image/toy_img.png" alt="">
+                            <img src="../../common_page/image/exImg.jpg" alt="">
                             <span class="text-ellipsis">[네츄럴코어 사료 연어 7kg] 할인 적용</span>
                         </td>
                         <td>1개
                             <input type="button" value="옵션/수량변경">
                         </td>
-                        <td>4,900원</td>
+                        <td class="price">
+                            <span class="sale_info">30%</span>
+                            <del>59,000원</del>
+                            <span class="sale_price">41,300원</span>
+                        </td>
                         <td></td>
                     </tr>
                     <tr>
@@ -90,26 +97,39 @@
 
                         </td>
                         <td>
-                            <img src="../../common_page/image/toy_img.png" alt="">
+                            <img src="../../common_page/image/exImg.jpg" alt="">
                             <span class="text-ellipsis">[네츄럴코어 사료 연어 7kg]</span>
                         </td>
-                        <td>1개
+                        <td>2개
                             <input type="button" value="옵션/수량변경">
                         </td>
-                        <td>4,900원</td>
-                        <td></td>
+                        <td class="price">
+                            <span class="sale_info">30%</span>
+                            <del>59,000원</del>
+                            <span class="sale_price">41,300원</span>
+                        </td>
+                        <td class="total">82,600원</td>
                     </tr>
                 </tbody>
             </table>
-            <!-- <ul>
-                <li>
-                    <input type="checkbox" name="" id="">
-                    <img src="../../common_page/image/toy_img.png" alt="">
-                    <span>[네츄럴코어 사료 연어 7kg]</span>
-                    <strong class="price">4,900원</strong>
-                    <input type="button" value="정기배송담기">
-                </li>
-            </ul> -->
+
+            <p>총 주문 상품 <span>2</span>개</p>
+            <div class="total_price">
+                <p>30,000원 이상 구매시 배송비 무료</p>
+                <div class="firstB_price">
+                    <span class="product_price">132,000원</span>
+                    <span class="delivery_price">0원</span>
+                    <span class="total_price2">135,000원</span>
+                </div>
+                <div class="price_info">
+                    <ul>
+                        <li class="product_price">주문금액</li>
+                        <li class="delivery_price">배송비</li>
+                        <li class="total_price2">결제금액</li>
+                    </ul>
+                </div>
+            </div>
+            <input type="button" value="구매하기" class="order">
         </main>
     </div>
 </body>

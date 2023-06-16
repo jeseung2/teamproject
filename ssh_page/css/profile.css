@@ -5,7 +5,7 @@ main {
     box-sizing: border-box;
     margin: 50px auto;
     background-color: #fff;
-    height: 70vh;
+    height: 650px;
     padding: 0 50px;
     border-top: 2px solid #ffa900;
     border-bottom: 2px solid #ffa900;
@@ -32,7 +32,7 @@ main .left_contents ul>li.checking {
 main .left_contents ul>li {
     color: #999;
     font-size: 20px;
-    line-height: 100px;
+    line-height: 80px;
     cursor: pointer;
 }
 
@@ -45,12 +45,16 @@ main .right_contents {
     margin-top: 50px;
 }
 
+main .right_contents figure {
+    height: 450px;
+}
+
 main .right_contents figure figcaption {
     font-size: 26px;
     line-height: 50px;
     color: #ffa900;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 main .right_contents figure table {
@@ -81,7 +85,7 @@ main .right_contents figure table tr th label {
 
 main .right_contents figure table tr td {
     display: block;
-    width: 70%;
+    width: 80%;
 }
 
 main .right_contents table tr td input,
@@ -95,12 +99,12 @@ main .right_contents table tr td select {
 
 main .right_contents table tr td .user_email,
 main .right_contents table tr td .domain_list {
-    width: 40%;
+    width: 39.5%;
     display: inline-block;
 }
 
 main .right_contents table tr .user_birth select {
-    width: 27%;
+    width: 26.9%;
     display: inline-block;
 }
 
@@ -109,7 +113,7 @@ main .right_contents table tr .user_birth select {
     height: 37px;
 } */
 
-input[type=button] {
+main .right_contents input[type=button] {
     width: 100px;
     height: 50px;
     border: none;
@@ -121,8 +125,23 @@ input[type=button] {
     float: right;
 }
 
-input[type=button]:hover {
+main .right_contents input[type=button]:hover {
     background-color: #fffbee;
     color: #ffa900;
 
+}
+
+main .right_contents table tr .agree_all input[type=checkbox] {
+    float: left;
+    margin-top: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main .right_contents table tr .agree_text {
+    width: 80%;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid;
+    padding: 10px;
 }
