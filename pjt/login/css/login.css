@@ -5,6 +5,11 @@ body {
     padding: 0;
   }
 
+  main {
+    min-height: ;
+    max-height: ;
+  }
+
   .container {
     max-width: 400px;
     line-height: 30px;
@@ -44,6 +49,10 @@ body {
     background-color: #f48609;
   }
 
+  .idpwfind {
+    text-align: center;
+    margin-top: 10px;
+  }
   /* div p {
     display: inline-block;
     text-align: center;
