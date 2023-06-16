@@ -1,0 +1,233 @@
+main {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin: 50px 0 115px auto;
+    border-top: 2px solid #ffa900;
+}
+
+main table {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 2px solid #ffa900;
+
+}
+
+/*========================================================================*/
+/*thead*/
+table thead {
+    height: 50px;
+    line-height: 46px;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #ffa900;
+}
+
+
+main table thead tr th,
+main table tbody tr td {
+    width: 25%;
+}
+
+main table thead tr th:first-child,
+main table tbody tr td:first-child {
+    width: 50px;
+}
+
+main table thead tr th input[type=checkbox],
+main table tbody tr td input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+/*========================================================================*/
+/*tbody*/
+
+table tbody {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+main table tbody tr {
+    display: block;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+main table tbody tr:last-child {
+    border: none;
+}
+
+main table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+main table tbody tr td {
+    line-height: 100px;
+    text-align: center;
+}
+
+main table tbody tr td .text-ellipsis {
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 255px;
+    float: right;
+}
+
+main table tbody tr td.price {
+    line-height: 16px;
+}
+
+main table tbody tr td.price .sale_info {
+    color: red;
+    line-height: 25px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+main table tbody tr td.price del {
+    text-decoration: line-through;
+    color: gray;
+    font-weight: 100;
+    display: inline-block;
+    /* margin-left: 10px; */
+    font-size: 12px;
+}
+
+main table tbody tr td.price .sale_price {
+    display: block;
+}
+
+main table tbody tr td.price,
+main table tbody tr td.total {
+    font-weight: bold;
+}
+
+main table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+main table tbody tr td input[type=button] {
+    padding: 3px;
+    border: none;
+    display: block;
+    border: 1px solid#ffa900;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+main table tbody tr td:nth-child(3) {
+    line-height: 40px;
+}
+
+main table tbody tr td input[type=button]:hover {
+    background-color: #fffbee;
+    color: #ffa900;
+}
+
+
+/*=====================================================================*/
+/* main div*/
+main>p {
+    line-height: 30px;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+
+main .total_price {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ffa900;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 50px;
+    margin-bottom: 20px;
+
+}
+
+main .total_price .firstB_price {
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    line-height: 45px;
+    font-size: 17px;
+}
+
+main .total_price .firstB_price .product_price::after,
+main .total_price .price_info .product_price::after {
+    content: "　+　";
+}
+
+main .total_price .firstB_price .delivery_price::after,
+main .total_price .price_info .delivery_price::after {
+    content: "　=　";
+}
+
+
+main .total_price .price_info {
+    width: 230px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+main .total_price .price_info::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main .total_price .price_info ul>li {
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+
+main .total_price p {
+    width: 100%;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    display: block;
+}
+
+
+main .order {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border: 1px solid #ffa900;
+    color: #ffa900;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+}
+
+main .order::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main .order:hover {
+    background-color: #fffbee;
+    color: #ffa900;
+
+}
