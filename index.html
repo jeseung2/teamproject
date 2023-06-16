@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./common_page/css/reset.css">
     <link rel="stylesheet" href="./common_page/css/header.css">
     <link rel="stylesheet" href="./common_page/css/footer.css">
+    <link rel="stylesheet" href="./pjt/main/css/main.css">
 </head>
 
 <body>
@@ -17,49 +18,157 @@
         <header>
             <nav>
                 <div class="menu_list">
-                    <a href="./../../hyejin_page/main/main.html">
-                        <img src="./../../common_page/image/logo.png" alt="로고" class="logo">
+                    <a href="#">
+                        <img src="./common_page/image/header/logo.png" alt="로고" class="logo">
                     </a>
                     <input type="search" name="search" id="search" placeholder="검색어를 입력해주세요.">
 
                     <ul>
                         <li>
-                            <a href=""><img src="../../common_page/image/login_img.png" alt=""> 로그인</a>
+                            <a href=""><img src="./common_page/image/header/login_img.png" alt=""> 로그인</a>
                         </li>
                         <li>
-                            <a href="./ssh_page/join/profile.html"><img src="../../common_page/image/join_img.png"
+                            <a href="./ssh_page/join/profile.html"><img src="./common_page/image/header/join_img.png"
                                     alt="">
                                 회원가입</a>
                         </li>
                         <li>
-                            <a href="./ssh_page/join/profile.html"><img src="../../common_page/image/cart_img.png"
+                            <a href="./ssh_page/join/profile.html"><img src="./common_page/image/header/cart_img.png"
                                     alt=""> 장바구니</a>
                         </li>
                         <li>
-                            <a href=""><img src="../../common_page/image/customer_service_img.png" alt=""> 고객센터</a>
+                            <a href=""><img src="./common_page/image/header/customer_service_img.png" alt="">
+                                고객센터</a>
                         </li>
                     </ul>
                 </div>
 
                 <ul class="gnb_list">
                     <li>
-                        <a href="#"><img src="../../common_page/image/food_img.png" alt="">간식&#183;사료</a>
+                        <a href="#"><img src="./common_page/image/header/food_img.png" alt="">간식&#183;사료</a>
                     </li>
                     <li>
-                        <a href="#"><img src="../../common_page/image/toy_img.png" alt="">장난감</a>
+                        <a href="./pjt/subpage1/html/subpage1_toy.html"><img
+                                src="./common_page/image/header/toy_img.png" alt="">장난감</a>
                     </li>
                     <li>
-                        <a href="#"><img src="../../common_page/image/living_img.png" alt="">리빙&#183;패션</a>
+                        <a href="#"><img src="./common_page/image/header/living_img.png" alt="">리빙&#183;패션</a>
                     </li>
                     <li>
-                        <a href="#"><img src="../../common_page/image/stroll_img.png" alt="">산책&#183;케어</a>
+                        <a href="#"><img src="./common_page/image/header/stroll_img.png" alt="">산책&#183;케어</a>
                     </li>
                     <li>
-                        <a href="#"><img src="../../common_page/image/community_img.png" alt="">커뮤니티</a>
+                        <a href="#"><img src="./common_page/image/header/community_img.png" alt="">커뮤니티</a>
                     </li>
                 </ul>
             </nav>
         </header>
+
+        <main>
+            <!-- 배너 영역 시작 -->
+            <div class="banner_wrap">
+                <div class="banner">
+                    <span class="arrow_left">
+                        <img src="./pjt/main/image/arrow_left.svg" alt="왼쪽 이동">
+                    </span>
+                    <span class="arrow_right">
+                        <img src="./pjt/main/image/arrow_right.svg" alt="오른쪽 이동">
+                    </span>
+                    <img src="./pjt/main/image/main_banner1.jpg" alt="배너 이미지">
+                    <!-- <img src="../main/image/main_banner1.jpg" alt="배너 이미지"> -->
+                    <!-- <img src="../main/image/main_banner1.jpg" alt="배너 이미지"> -->
+                </div>
+            </div>
+
+            <!-- 베스트 셀러 영역 시작 -->
+            <div class="bestseller_wrap">
+                <h1>베스트 셀러 상품</h1>
+                <div class="bestseller_list">
+                    <a href="#">
+                        <h2>간식, 사료</h2>
+                    </a>
+                    <a href="./pjt/main/html/main_best_toy.html">
+                        <h2>장난감</h2>
+                    </a>
+                    <a href="">
+                        <h2>리빙, 패션</h2>
+                    </a>
+                    <a href="">
+                        <h2>산책, 케어</h2>
+                    </a>
+                </div>
+                <ul class="bestseller">
+                    <li class="bestseller_item">
+                        <a href="">
+                            <img src="./pjt/main/image/bestseller2.png" alt="상품 1">
+                            <h3>(간식) 진짜 연어</h3>
+                            <span class="sale_info">30%</span>
+                            <span class="normal_pr">39,900원</span>
+                            <span class="present_pr">27,900원</span>
+                        </a>
+                    </li>
+                    <li class="bestseller_item">
+                        <a href="">
+                            <img src="./pjt/main/image/bestseller3.jpeg" alt="상품 2">
+                            <h3>(수입) 멍멍 사료</h3>
+                            <span class="sale_info">20%</span>
+                            <span class="normal_pr">39,900원</span>
+                            <span class="present_pr">31,900원</span>
+                        </a>
+                    </li>
+                    <li class="bestseller_item">
+                        <a href="">
+                            <img src="./pjt/main/image/bestseller4.png" alt="상품 2">
+                            <h3>하루 유산균</h3>
+                            <span class="sale_info">10%</span>
+                            <span class="normal_pr">40,000원</span>
+                            <span class="present_pr">36,000원</span>
+                        </a>
+                    </li>
+                    <li class="bestseller_item">
+                        <a href="">
+                            <img src="./pjt/main/image/bestseller5.png" alt="상품 2">
+                            <h3>아침애 사료 (다이어트)</h3>
+                            <!-- <span class="sale_info">30%</span> -->
+                            <!-- <span class="normal_pr">30%</span> -->
+                            <span class="sale_info">30%</span>
+                            <span class="normal_pr">29,900원</span>
+                            <span class="present_pr">20,900원</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <!-- 사이트 홍보 영역 시작 -->
+            <div class="promotion_wrap">
+                <div class="promotion">
+                    <span class="arrow_left">
+                        <img src="./pjt/main/image/arrow_left.svg" alt="왼쪽 이동">
+                    </span>
+                    <span class="arrow_right">
+                        <img src="./pjt/main/image/arrow_right.svg" alt="오른쪽 이동">
+                    </span>
+                    <div class="promotion1">
+                        <img src="./pjt/main/image/review1.jpg" alt="">
+                        <img src="./pjt/main/image/review2.jpg" alt="">
+                    </div>
+
+                    <!-- 웹사이트 홍보 -->
+                    <!-- <img src="" alt="사용자 리뷰"> -->
+                    <!-- <img src="" alt="커뮤니티 인기글"> -->
+                </div>
+            </div>
+            <hr>
+
+            <!-- 동영상 영역 시작 -->
+            <div class="video_wrap">
+                <div class="video">
+
+                </div>
+            </div>
+        </main>
+        <hr>
 
 
         <footer>
@@ -89,7 +198,7 @@
                 </div>
                 <div class="ft_copy">
                     <a href="#">
-                        <img src="../../common_page/image/logo.png" alt="사이트 로고">
+                        <img src="../../common_page/image/header/logo.png" alt="사이트 로고">
                     </a>
                     <p>&copy; 2023 웹사이트. All rights reserved.</p>
                 </div>
