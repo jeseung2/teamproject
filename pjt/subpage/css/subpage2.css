@@ -18,7 +18,7 @@ section .info_area {
     margin: 0 auto;
     width: 50%;
     box-sizing: border-box;
-    display: inline-block;
+    /* display: inline-block; */
     float: left;
 }
 section section {
