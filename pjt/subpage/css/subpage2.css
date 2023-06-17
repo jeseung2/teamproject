@@ -1,3 +1,6 @@
+
+/*========================================= common =========================================*/
+
 main {
     min-width: 1200px;
     max-width: 1500px;
@@ -11,22 +14,6 @@ section {
     margin: 0 auto;
 }
 
-.top_area {
-    display: flex;
-    justify-content: ;
-}
-
-section .img_area,
-section .info_area {
-    padding: 1em;
-    width: 50%;
-    margin: 0 auto;
-}
-
-section .img_area>div {
-    padding: 1em;
-}
-
 section section {
     /* 높이 확인을 위해 설정해둠 나중에 수정 */
     /* height: 500px; */
@@ -35,6 +22,8 @@ section section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: inline-block;
 }
+
+/*========================================= nav =========================================*/
 
 section>section>nav {
     display: inline-block;
@@ -59,7 +48,7 @@ section>section>nav>ul>li {
 
 .fixed_nav>ul>li:hover,
 section>section>nav>ul>li:hover,
-input[type=""]:hover {
+input[type="button"]:hover {
     transition: .5s;
     background-color: #ffe344;
 }
@@ -100,12 +89,28 @@ section>#section4>nav>ul>li:nth-child(4) {
     border-radius: 10px;
 }
 
+/*========================================= toparea =========================================*/
+
+.top_area {
+    display: flex;
+}
+
+section .img_area,
+section .info_area {
+    padding: 1em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+section .img_area>div {
+    padding: 1em;
+}
+
 .main_img>img {
     width: 500px;
     height: 500px;
     display: inline-block;
     border: 1px solid #ffa900;
-    ;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: bisque;
@@ -117,7 +122,6 @@ section>#section4>nav>ul>li:nth-child(4) {
     margin: 0 auto;
     display: inline-block;
     border: 1px solid #ffa900;
-    ;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: bisque;
@@ -136,28 +140,47 @@ section>#section4>nav>ul>li:nth-child(4) {
     width: 80%;
 }
 
-select[id="option"] {
-    margin: 3em auto;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+.sale_info {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.normal_pr {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.present_pr {
+    font-weight: bold;
+}
+
+/*========================================= 상품상세정보 =========================================*/
+
+.section button {
+    border: none;
+}
+
+#section1>h3 {
+    padding-top: 3em;
+}
+
+.Product_info {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid #ffa900;
     border-radius: 10px;
 }
 
-input[type=""] {
-    width: 100%;
-    margin: 1em 0;
-    padding: 10px 0;
-    border: 1px solid #ffa900;
-    border-radius: 10px;
-    background-color: #ffffff;
-    color: #ffa900;
-    cursor: pointer;
-    box-sizing: border-box;
-    text-align: center;
+.Product_info>tr>th{
+    width: 50%;
 }
+
+.Product_info>tr>td {
+    width: 50%;
+}
+
+/*========================================= 상품구매안내 =========================================*/
 
 .purchase_info {
     text-align: left;
@@ -199,4 +222,42 @@ input[type=""] {
 
 .purchase_info .purchase_right div {
     padding: 1em;
+}
+
+select[id="option"] {
+    margin: 3em auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    margin: 1em 0;
+    padding: 10px 0;
+    border: 1px solid #ffa900;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #ffa900;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*========================================= 상품사용후기 =========================================*/
+
+
+
+/*========================================= 상품 Q & A =========================================*/
+
+#section4 div {
+    padding: 10em;
+}
+
+#section4 input[type="button"] {
+    width: 80%;
+    margin-bottom: 3em;
 }
