@@ -28,7 +28,7 @@ section .img_area>div {
 }
 
 section section {
-    /* 높이는 확인을 위해 설정해둠 나중에 수정 */
+    /* 높이 확인을 위해 설정해둠 나중에 수정 */
     /* height: 500px; */
     width: 100%;
     text-align: center;
@@ -36,7 +36,7 @@ section section {
     display: inline-block;
 }
 
-section>section>nav{
+section>section>nav {
     display: inline-block;
     width: 100%;
 }
@@ -57,6 +57,27 @@ section>section>nav>ul>li {
     border-radius: 10px;
 }
 
+.fixed_nav>ul>li:hover,
+section>section>nav>ul>li:hover,
+input[type=""]:hover {
+    transition: .5s;
+    background-color: #ffe344;
+}
+
+section>#section1>nav>ul>li:nth-child(1) {
+    background-color: #ffe344;
+}
+
+section>#section2>nav>ul>li:nth-child(2) {
+    background-color: #ffe344;
+}
+
+section>#section3>nav>ul>li:nth-child(3) {
+    background-color: #ffe344;
+}
+section>#section4>nav>ul>li:nth-child(4) {
+    background-color: #ffe344;
+}
 
 .fixed_nav {
     border-radius: 10px;
@@ -68,11 +89,13 @@ section>section>nav>ul>li {
     z-index: 1;
     /* transform: translateY(-50%); */
 }
+
 .fixed_nav>ul>li {
     margin: 1em;
     padding: 1em;
     background-color: #ffffff;
-    border: 1px solid #ffa900;;
+    border: 1px solid #ffa900;
+    ;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -81,7 +104,8 @@ section>section>nav>ul>li {
     width: 500px;
     height: 500px;
     display: inline-block;
-    border: 1px solid #ffa900;;
+    border: 1px solid #ffa900;
+    ;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: bisque;
@@ -92,8 +116,87 @@ section>section>nav>ul>li {
     height: 94px;
     margin: 0 auto;
     display: inline-block;
-    border: 1px solid #ffa900;;
+    border: 1px solid #ffa900;
+    ;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: bisque;
+}
+
+.info_area table {
+    width: 100%;
+    /* display: inline-block; */
+    padding: 0 10px;
+}
+
+.info_area table tr,
+.info_area table tr td {
+    /* vertical-align: baseline; */
+    height: 100px;
+    width: 80%;
+}
+
+select[id="option"] {
+    margin: 3em auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+input[type=""] {
+    width: 100%;
+    margin: 1em 0;
+    padding: 10px 0;
+    border: 1px solid #ffa900;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #ffa900;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.purchase_info {
+    text-align: left;
+    
+}
+
+.purchase_info h3 {
+    text-align: center;
+    padding: 1em;
+}
+
+.purchase_info h4 {
+    text-align: center;
+}
+
+.purchase_left {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.purchase_info .purchase_left div:nth-child(1),
+.purchase_info .purchase_left div:nth-child(2) {
+    border-bottom: 1px dashed #ddd;
+}
+
+.purchase_info .purchase_left div:nth-child(1),
+.purchase_info .purchase_left div:nth-child(2),
+.purchase_info .purchase_left div:nth-child(3) {
+    height: calc(100%/3);
+}
+
+.purchase_info .purchase_right {
+    width: 50%;
+    float: right;
+}
+
+.purchase_info .purchase_right div {
+    padding: 1em;
 }
