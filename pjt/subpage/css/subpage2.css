@@ -6,17 +6,15 @@ main {
     max-width: 1500px;
     margin:  50px auto;
     background-color: #ffffff;
-    border-radius: 10px;
 }
 
 section {
     width: 100%;
     margin: 0 auto;
+    border-bottom:2px solid #ffa900;
 }
 
 section section {
-    /* 높이 확인을 위해 설정해둠 나중에 수정 */
-    /* height: 500px; */
     width: 100%;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -73,10 +71,8 @@ section>#section4>nav>ul>li:nth-child(4) {
     text-align: center;
     position: fixed;
     left: 1em;
-    /* top: 50%; */
     bottom: 10%;
     z-index: 1;
-    /* transform: translateY(-50%); */
 }
 
 .fixed_nav>ul>li {
@@ -93,6 +89,7 @@ section>#section4>nav>ul>li:nth-child(4) {
 
 .top_area {
     display: flex;
+    border-top: 2px solid #ffa900;
 }
 
 section .img_area,
@@ -129,13 +126,11 @@ section .img_area>div {
 
 .info_area table {
     width: 100%;
-    /* display: inline-block; */
     padding: 0 10px;
 }
 
 .info_area table tr,
 .info_area table tr td {
-    /* vertical-align: baseline; */
     height: 100px;
     width: 80%;
 }
