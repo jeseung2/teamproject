@@ -210,18 +210,25 @@ main .promotion:hover .promotion1 img {
 
 /* ===== 동영상 영역 시작 ===== */
 main .video_wrap {
-    height: 400px;
+    height: 500px;
     text-align: center;
     padding: 50px;
-    /* background-color: lightpink; */
 }
 
 main .video {
     display: inline-block;
-    margin: 50px auto;
-    width: 500px;
-    height: 300px;
-    background-color: blueviolet;
+    margin: auto;
+    width: 720px;
+    height: 480px;
+    position: relative;
+}
+
+main .video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* ===== 동영상 영역 끝 ===== */
