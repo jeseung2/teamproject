@@ -11,7 +11,6 @@ html::-webkit-scrollbar-track {
     background-color: #eee;
     border-radius: 8px;
 } */
-
 main {
     width: 100%;
     min-width: 1200px;
@@ -145,8 +144,8 @@ main table tbody tr td:nth-child(3) {
 }
 
 main table tbody tr td input[type=button]:hover {
-    background-color: #fffbee;
-    color: #ffa900;
+    transition: .5s;
+    background-color: #ffe344;
 }
 
 
@@ -227,7 +226,7 @@ main .order {
     height: 50px;
     border: none;
     border: 1px solid #ffa900;
-    color: #ffa900;
+    /* color: #ffa900; */
     background-color: #fff;
     border-radius: 8px;
     cursor: pointer;
@@ -241,7 +240,7 @@ main .order::after {
 }
 
 main .order:hover {
-    background-color: #fffbee;
-    color: #ffa900;
+    transition: .5s;
+    background-color: #ffe344;
 
 }

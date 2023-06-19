@@ -1,8 +1,22 @@
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'Cafe24SsurroundAir', sans-serif;
     background-color: #fffbee;
 }
 
 .checking {
     color: #ffa900;
     font-weight: bold;
+}
+
+.title {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 26px;
 }
