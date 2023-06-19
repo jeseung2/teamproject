@@ -11,13 +11,12 @@ html::-webkit-scrollbar-track {
     background-color: #eee;
     border-radius: 8px;
 } */
-
 main {
     width: 100%;
     min-width: 1200px;
     max-width: 1500px;
     box-sizing: border-box;
-    /* margin: 50px 0 115px auto; */
+    margin: 50px 0 115px auto;
     border-top: 2px solid #ffa900;
 }
 
@@ -27,12 +26,6 @@ main table {
     background-color: #fff;
     border-bottom: 2px solid #ffa900;
 
-}
-
-.title {
-    padding: 25px 0;
-    text-align: center;
-    margin: 50px 0;
 }
 
 /*========================================================================*/
@@ -151,8 +144,8 @@ main table tbody tr td:nth-child(3) {
 }
 
 main table tbody tr td input[type=button]:hover {
-    background-color: #fffbee;
-    color: #ffa900;
+    transition: .5s;
+    background-color: #ffe344;
 }
 
 
@@ -233,12 +226,11 @@ main .order {
     height: 50px;
     border: none;
     border: 1px solid #ffa900;
-    color: #ffa900;
+    /* color: #ffa900; */
     background-color: #fff;
     border-radius: 8px;
     cursor: pointer;
     float: right;
-    margin-bottom: 50px;
 }
 
 main .order::after {
@@ -248,11 +240,7 @@ main .order::after {
 }
 
 main .order:hover {
-    background-color: #fffbee;
-    color: #ffa900;
+    transition: .5s;
+    background-color: #ffe344;
 
-}
-
-.footer_wrap {
-    margin-top: 130px !important;
 }
