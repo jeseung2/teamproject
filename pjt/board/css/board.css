@@ -1,10 +1,8 @@
 main {
-    font-family: Arial, sans-serif;
-    width: 100%;
+    /* width: 100%;
     min-width: 1200px;
     max-width: 1500px;
-    /* box-sizing: border-box; */
-    margin: 50px 0 115px auto;
+    margin: 50px 0 115px auto; */
   }
 
   h1 {
