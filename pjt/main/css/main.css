@@ -61,14 +61,6 @@ main .bestseller_wrap h1 {
     color: rgb(255, 111, 0);
 }
 
-main .bestseller {
-    margin: 50px auto;
-    width: 1200px;
-    height: 300px;
-    /* background-color: rgb(91, 103, 215); */
-    padding: 20px;
-}
-
 main .bestseller_list {
     margin-top: 30px;
 }
@@ -91,14 +83,22 @@ main .bestseller_list h2 {
 
 
 /* 베스트셀러 상품 목록 */
+main .bestseller {
+    margin: 50px 150px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
 main .bestseller_item {
-    display: inline-block;
+    display: flex;
     box-sizing: border-box;
     width: 250px;
     height: 250px;
     margin: 10px auto;
     padding: 10px;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
 }
 
 main .bestseller_item img {
@@ -152,8 +152,6 @@ main .promotion_wrap {
     margin: 20px 0;
     padding: 50px;
     height: 400px;
-    /* background-color: lightgreen; */
-    text-align: center;
 }
 
 .promotion {
@@ -210,18 +208,25 @@ main .promotion:hover .promotion1 img {
 
 /* ===== 동영상 영역 시작 ===== */
 main .video_wrap {
-    height: 400px;
+    height: 500px;
     text-align: center;
     padding: 50px;
-    /* background-color: lightpink; */
 }
 
 main .video {
-    display: inline-block;
-    margin: 50px auto;
-    width: 500px;
-    height: 300px;
-    background-color: blueviolet;
+    display: flex;
+    margin: auto;
+    width: 720px;
+    height: 480px;
+    position: relative;
+}
+
+main .video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 /* ===== 동영상 영역 끝 ===== */
