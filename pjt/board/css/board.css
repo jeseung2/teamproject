@@ -23,13 +23,14 @@ main {
     border-bottom: 2px solid #ffa900;
     margin: 50px 0 115px auto;
     /* margin: auto; */
-    /* border-collapse: collapse; */
+    border-collapse: collapse;
 }
 
   th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    text-align: center;
   }
 
   th {
