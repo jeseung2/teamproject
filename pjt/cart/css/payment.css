@@ -20,30 +20,27 @@
 }
 
 /* layout */
-h1,
+
+.main_title {
+    padding: 15px;
+    margin: 50px;
+    color: black;
+    text-align: center;
+}
+
 h2 {
     color: #ffa900;
     margin: 1em;
 }
 
-.main {
-    min-width: 1200px;
+form {
     max-width: 1500px;
+    min-width: 1200px;
     margin: 50px auto;
-    background-color: #ffffff;
     padding: 3em;
     border-top: 2px solid #ffa900;
     border-bottom: 2px solid #ffa900;
-
-}
-
-form {
-    max-width: 1000px;
-    min-width: 1000px;
-    margin: 50px auto;
-    border: 1px solid #cccccc;
-    padding: 3em;
-    border-radius: 10px;
+    background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -135,6 +132,7 @@ table {
 
 form section div p {
     height: 150px;
+    margin-bottom: 20px;
     border: 1px solid #cccccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
