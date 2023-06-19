@@ -113,6 +113,21 @@ form section div p {
     position: relative;
 }
 
+.sale_info {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.normal_pr {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.present_pr {
+    font-weight: bold;
+}
+
 /* .name {
     display: inline-block;
 } */
