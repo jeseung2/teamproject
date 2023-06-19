@@ -77,59 +77,54 @@
 
                 <h2>배송지</h2>
                 <table>
-                    <tbody>
-                        <tr>
-                            <th>
-                                <label for="name">받는사람</label>
-                            </th>
-                            <td colspan="">
-                                <input type="text" id="name" name="name" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="address">주소</label>
-                            </th>
-                            <td colspan="">
-                                <input type="text" id="address" name="address" required
-                                    placeholder="도로명, 지번, 건물명 등을 입력하세요">
-                                <input type="text" id="address" name="address" required placeholder="상세주소를 입력하세요">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="phone">전화번호</label>
-                            </th>
-                            <td>
-                                <input type="tel" id="phone1" name="phone1" required pattern="[0-9]{3}"
-                                    placeholder="010">
-                                <input type="tel" id="phone2" name="phone2" required pattern="[0-9]{3,4}"
-                                    placeholder="1234">
-                                <input type="tel" id="phone3" name="phone3" required pattern="[0-9]{4}"
-                                    placeholder="5678">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="email">이메일</label>
-                            </th>
-                            <td colspan="">
-                                <input type="email" id="email" name="email" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <label for="payment-method">결제방법</label>
-                            </th>
-                            <td>
-                                <select id="payment-method" name="payment-method">
-                                    <option value="credit-card">신용카드</option>
-                                    <option value="bank-transfer">계좌이체</option>
-                                    <option value="tel">휴대전화</option>
-                                </select>
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <th>
+                            <label for="name">받는사람</label>
+                        </th>
+                        <td colspan="">
+                            <input type="text" id="name" name="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="address">주소</label>
+                        </th>
+                        <td colspan="">
+                            <input type="text" id="address" name="address" required placeholder="도로명, 지번, 건물명 등을 입력하세요">
+                            <input type="text" id="address" name="address" required placeholder="상세주소를 입력하세요">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="phone">전화번호</label>
+                        </th>
+                        <td>
+                            <input type="tel" id="phone1" name="phone1" required pattern="[0-9]{3}" placeholder="010">
+                            <input type="tel" id="phone2" name="phone2" required pattern="[0-9]{3,4}"
+                                placeholder="1234">
+                            <input type="tel" id="phone3" name="phone3" required pattern="[0-9]{4}" placeholder="5678">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">이메일</label>
+                        </th>
+                        <td colspan="">
+                            <input type="email" id="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="payment-method">결제방법</label>
+                        </th>
+                        <td>
+                            <select id="payment-method" name="payment-method">
+                                <option value="credit-card">신용카드</option>
+                                <option value="bank-transfer">계좌이체</option>
+                                <option value="tel">휴대전화</option>
+                            </select>
+                        </td>
+                    </tr>
                 </table>
                 <hr>
 
@@ -161,13 +156,13 @@
                                 </div>
                             </td>
                             <td>
-                                <h3 class="name">집착 터그 강아지 훈련 장난감</h3>
+                                <h3 class="name">알록달록 로프 장난감</h3>
                             </td>
                             <td>
                                 <ul>
-                                    <li><span class="sale_info">30%</span>
-                                        <span class="normal_pr">39,900원</span>
-                                        <span class="present_pr">27,900원</span>
+                                    <li><span class="sale_info">10%</span>
+                                        <span class="normal_pr">13,000원</span>
+                                        <span class="present_pr">11,700원</span>
                                     </li>
                                     <li><span class="free-delivery">3000원(50,000원 이상 구매시 무료)</span></li>
                                 </ul>
@@ -201,9 +196,11 @@
                         </div>
                     </div>
                 </section>
-                <a href="">
-                    <input type="submit" value="구매하기">
-                </a>
+                <div class="button">
+                    <a href="">
+                        <input type="submit" value="구매하기">
+                    </a>
+                </div>
             </form>
         </section>
         <footer>

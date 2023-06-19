@@ -4,7 +4,7 @@
 main {
     min-width: 1200px;
     max-width: 1500px;
-    margin: 0 auto;
+    margin:  50px auto;
     background-color: #ffffff;
     border-radius: 10px;
 }
@@ -249,7 +249,10 @@ input[type="button"] {
 
 /*========================================= 상품사용후기 =========================================*/
 
-
+#section3 div {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
 /*========================================= 상품 Q & A =========================================*/
 
