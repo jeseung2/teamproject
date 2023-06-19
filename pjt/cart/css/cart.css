@@ -252,3 +252,7 @@ main .order:hover {
     color: #ffa900;
 
 }
+
+.footer_wrap {
+    margin-top: 130px !important;
+}
