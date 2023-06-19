@@ -73,6 +73,10 @@ main .bestseller_list {
     margin-top: 30px;
 }
 
+main .bestseller_list h2:hover {
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+}
+
 main .bestseller_list h2 {
     display: inline-block;
     font-size: 18px;
@@ -82,10 +86,11 @@ main .bestseller_list h2 {
     border-radius: 50%;
     margin-left: 20px;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
 
-/* 베스트셀러 상품 목록 */
 
+/* 베스트셀러 상품 목록 */
 main .bestseller_item {
     display: inline-block;
     box-sizing: border-box;
@@ -162,6 +167,7 @@ main .promotion1 img:nth-of-type(1) {
     left: 200px;
     top: 100px;
     animation-name: left_to_right;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
 
 main .promotion1 img:nth-of-type(2) {
@@ -170,6 +176,7 @@ main .promotion1 img:nth-of-type(2) {
     right: 200px;
     top: 30px;
     animation-name: right_to_left;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
 
 main .promotion:hover .promotion1 img {
@@ -218,7 +225,3 @@ main .video {
 }
 
 /* ===== 동영상 영역 끝 ===== */
-
-
-
-
