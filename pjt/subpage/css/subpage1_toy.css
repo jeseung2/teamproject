@@ -14,13 +14,8 @@ main .item_sort * {
     display: inline-block;
 }
 
-main .cate_wrap,
 main .item_sort_wrap {
     padding: 15px;
-}
-
-.cate_wrap {
-    margin: 50px 0;
 }
 
 .item_sort_wrap {
