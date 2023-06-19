@@ -24,6 +24,8 @@ header nav .menu_list {
     display: block;
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav .menu_list input[type=search] {
@@ -40,15 +42,12 @@ header nav .menu_list input[type=search] {
 }
 
 header nav .menu_list img {
-    float: left;
-    display: block;
     width: 210px;
     height: 50px;
     margin-top: 15px;
 }
 
 header nav .menu_list ul {
-    float: right;
     margin-top: 50px;
 }
 
@@ -67,8 +66,8 @@ header nav .menu_list ul>li a {
 header nav .menu_list ul>li a img {
     width: 16px;
     height: 16px;
-    display: inline-block;
     margin: 2px 3px;
+    vertical-align: middle;
 }
 
 header nav .menu_list ul>li a:hover {
@@ -119,6 +118,8 @@ footer .footer_wrap {
     box-sizing: border-box;
     padding: 20px;
     color: #ffffff;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     position: relative;
     width: 100%;
@@ -139,8 +140,8 @@ footer p {
 
 /* ===== footer info 1 시작 ===== */
 footer .ft_info1 {
-    float: left;
     text-align: left;
+    padding-left: 20px;
 }
 
 footer .ft_info1 h3 {
@@ -165,9 +166,6 @@ footer .ft_info1 span {
 }
 
 /* ===== footer info 2 시작 ===== */
-footer .ft_info2 {
-    float: right;
-}
 
 footer .ft_info2 p {
     color: rgb(95, 95, 95);
