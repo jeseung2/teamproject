@@ -2,6 +2,13 @@ main * {
     text-align: center;
 }
 
+.item_sort_wrap,
+.content_wrap,
+.page_shift {
+    background-color: white;
+}
+
+
 /* ===== 상단 카테고리, 정렬 영역 시작 ===== */
 
 main .item_sort * {
@@ -10,11 +17,16 @@ main .item_sort * {
 
 main .cate_wrap,
 main .item_sort_wrap {
-    padding: 10px;
+    padding: 15px;
 }
 
 .cate_wrap {
     margin: 50px 0;
+}
+
+.item_sort_wrap {
+    border-top: #ffa900 1px solid;
+    border-bottom: #ffa900 1px solid;
 }
 
 main .item_sort li,
@@ -22,21 +34,22 @@ main .item_sort p {
     height: 30px;
     line-height: 30px;
     padding: 0 5px;
-    color: #ff9100;
     font-weight: bold;
-    border: #ffa900 1px solid;
-    border-radius: 5px;
+    background-color: #fffbee;
+    color: rgb(70, 70, 70);
+    border: rgb(70, 70, 70) 1px solid;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-main .item_sort ul {
+main .item_sort ul,
+main .item_sort p {
     position: relative;
-    right: 35%;
+    right: 34%;
 }
 
 main .item_sort p {
-    position: relative;
-    left: 35%;
+    left: 34%;
 }
 
 
@@ -71,7 +84,7 @@ main .normal_item img {
 main .normal_item img:nth-child(2) {
     position: absolute;
     top: 10px;
-    left: 20px;
+    left: 25px;
     opacity: 0;
     transition: opacity 0.5s linear;
 }
@@ -103,6 +116,11 @@ main .item_info_wrap .present_pr {
 
 
 /* ===== 페이지 이동 ===== */
+
+main .page_shift {
+    padding-bottom: 50px;
+}
+
 main .page_shift a {
     display: inline-block;
     width: 30px;
@@ -110,7 +128,7 @@ main .page_shift a {
     line-height: 28px;
     font-size: 1.2em;
     border: #ffa900 1px solid;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0 5px;
 }
 
