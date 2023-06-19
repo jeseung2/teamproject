@@ -17,7 +17,7 @@ main {
     min-width: 1200px;
     max-width: 1500px;
     box-sizing: border-box;
-    margin: 50px 0 115px auto;
+    /* margin: 50px 0 115px auto; */
     border-top: 2px solid #ffa900;
 }
 
@@ -27,6 +27,12 @@ main table {
     background-color: #fff;
     border-bottom: 2px solid #ffa900;
 
+}
+
+.title {
+    padding: 25px 0;
+    text-align: center;
+    margin: 50px 0;
 }
 
 /*========================================================================*/
@@ -232,6 +238,7 @@ main .order {
     border-radius: 8px;
     cursor: pointer;
     float: right;
+    margin-bottom: 50px;
 }
 
 main .order::after {
