@@ -21,7 +21,9 @@
 
 /* layout */
 
-
+.title {
+    color: black;
+}
 
 h2 {
     color: #ffa900;
