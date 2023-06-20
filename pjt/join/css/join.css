@@ -81,6 +81,7 @@ main .right_contents figure table tr th label {
     display: block;
     text-align: left;
     font-weight: normal;
+    line-height: 28px;
 }
 
 main .right_contents figure table tr td {
@@ -134,11 +135,13 @@ main .right_contents input[type=button]:hover {
 
 }
 
-main .right_contents table tr .agree_all {
+main .right_contents table tr .agree_all,
+main .right_contents table tr .agree_selection {
     margin-bottom: 20px;
 }
 
-main .right_contents table tr .agree_all input[type=checkbox] {
+main .right_contents table tr .agree_all input[type=checkbox],
+main .right_contents table tr .agree_selection input[type=checkbox] {
     float: left;
     margin-top: 15px;
     display: inline-block;
