@@ -27,12 +27,14 @@ main .item_sort li,
 main .item_sort p {
     height: 30px;
     line-height: 30px;
-    padding: 0 5px;
     font-weight: bold;
-    background-color: #fffbee;
     color: rgb(70, 70, 70);
+    background-color: #fffbee;
     border: rgb(70, 70, 70) 1px solid;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+
+    padding: 0 5px;
     cursor: pointer;
 }
 
@@ -59,25 +61,25 @@ main .content_wrap li {
 }
 
 main .normal_item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     width: 300px;
     height: 300px;
     padding: 10px;
-    vertical-align: middle;
     position: relative;
 }
 
 main .normal_item img {
-    box-sizing: border-box;
-    border-radius: 10px;
     width: 250px;
     height: 250px;
+    border-radius: 10px;
 }
 
 main .normal_item img:nth-child(2) {
     position: absolute;
-    top: 10px;
+    top: 25px;
     left: 25px;
     opacity: 0;
     transition: opacity 0.5s linear;
@@ -116,18 +118,22 @@ main .page_shift {
 }
 
 main .page_shift a {
-    display: inline-block;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
-    line-height: 28px;
+
     font-size: 1.2em;
     border: #ffa900 1px solid;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
     margin: 0 5px;
 }
 
 main .page_shift a:hover {
-    text-decoration: underline;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
 }
 
 main .page_shift a[href="#"] {
