@@ -3,28 +3,25 @@ main * {
 }
 
 .item_sort_wrap,
-.content_wrap,
-.page_shift {
-    background-color: white;
+.content_wrap {
+background-color: white;
 }
+
 
 /* ===== 상단 카테고리, 정렬 영역 시작 ===== */
 
-main .item_sort * {
+main .sort * {
     display: inline-block;
 }
 
-main .item_sort_wrap {
+main .sort_wrap {
     padding: 15px;
-}
-
-.item_sort_wrap {
     border-top: #ffa900 1px solid;
     border-bottom: #ffa900 1px solid;
 }
 
-main .item_sort li,
-main .item_sort p {
+main .sort li,
+main .sort p {
     height: 30px;
     line-height: 30px;
     font-weight: bold;
@@ -38,13 +35,13 @@ main .item_sort p {
     cursor: pointer;
 }
 
-main .item_sort ul,
-main .item_sort p {
+main .sort ul,
+main .sort p {
     position: relative;
     right: 34%;
 }
 
-main .item_sort p {
+main .sort p {
     left: 34%;
 }
 
@@ -114,7 +111,7 @@ main .item_info_wrap .present_pr {
 /* ===== 페이지 이동 ===== */
 
 main .page_shift {
-    padding-bottom: 50px;
+    padding: 50px;
 }
 
 main .page_shift a {
