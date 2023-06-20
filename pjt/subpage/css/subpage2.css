@@ -182,8 +182,8 @@ section .img_area>div {
 }
 
 .purchase_info h3 {
+    padding: 50px;
     text-align: center;
-    padding: 1em;
 }
 
 .purchase_info h4 {
@@ -195,7 +195,7 @@ section .img_area>div {
     width: 50%;
     border-right: 1px solid #ddd;
     box-sizing: border-box;
-    padding: 1em;
+    padding: 50px;
 }
 
 .purchase_info .purchase_left div:nth-child(1),
@@ -209,9 +209,10 @@ section .img_area>div {
     height: calc(100%/3);
 }
 
-.purchase_info .purchase_right {
+.purchase_right {
     width: 50%;
     float: right;
+    padding-top: 200px;
 }
 
 .purchase_info .purchase_right div {
@@ -245,6 +246,7 @@ input[type="button"] {
 
 #section3 {
     padding: 50px;
+    padding-top: 0;
     box-sizing: border-box;
 }
 
