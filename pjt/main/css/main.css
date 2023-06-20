@@ -1,6 +1,6 @@
 /* ===== 메인 시작 ===== */
 main {
-    background-color: white;
+    /* background-color: white; */
     margin-top: 50px;
 }
 
@@ -55,6 +55,9 @@ main .bestseller_wrap {
     margin-top: 50px;
     padding: 50px 0;
     text-align: center;
+    border: 1px solid #ffa900;
+    border-radius: 20px;
+    background-color: #fff;
 }
 
 main .bestseller_wrap h1 {
@@ -206,6 +209,7 @@ main .promotion1_wrap {
     padding: 100px;
     padding-left: 140px;
     margin: 50px 0;
+    border-radius: 20px;
 
     display: flex;
     align-items: center;

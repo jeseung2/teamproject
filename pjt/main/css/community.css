@@ -45,6 +45,14 @@
     overflow: hidden;
 }
 
+.community_wrap .community_event ul:first-of-type {
+    border-top: 1px solid #c8c8c8;
+}
+
+.community_wrap .community_event ul {
+    margin: 10px calc((100% - 70%)/2);
+}
+
 .community_wrap .community_event ul>li {
     /* display: flex;
     flex-direction: column;
@@ -63,9 +71,9 @@
 }
 
 .community_wrap .community_event ul>li p {
-    margin: 0 calc((100% - 70%)/2);
+    /* margin: 0 calc((100% - 70%)/2); */
     padding-bottom: 20px;
-    width: 70%;
+    width: 100%;
     display: inline-block;
     float: right;
     text-overflow: ellipsis;
