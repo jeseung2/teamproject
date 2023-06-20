@@ -40,6 +40,27 @@ main {
     background-color: #f5f5f5;
   }
 
+  input[type="submit"] {
+    padding: 10px 20px;
+    border: 1px solid #ffa900;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #ffa900;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    transition: .5s;
+    background-color: #ffe344;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
 /* .button {
     
 } */
