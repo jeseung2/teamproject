@@ -240,15 +240,49 @@ main .promotion1:hover h2 {
 main .promotion1 img {
     width: 200px;
     height: 200px;
-    margin: 30px 100px;
+    margin: 30px 80px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /* promotion2 사진 배너 홍보 */
 main .promotion2 {
     height: 400px;
     background: url(https://shop-phinf.pstatic.net/20220630_96/1656562559901gCvqO_JPEG/C5A9B1E2BAAFC8AFsubtop_product.jpg) 0/100% no-repeat;
-    object-fit: cover;
-    margin: 50px 0;
+    position: relative;
+}
+
+main .promotion2 .promotion2_title,
+main .promotion2 span {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+main .promotion2 .promotion2_title {
+    font-size: 40px;
+    left: 0;
+    top: 25%;
+}
+
+main .promotion2 span {
+    left: 0;
+    top: 50%;
+}
+
+main .promotion2 a {
+    position: absolute;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    background-color: #ffa900;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    left: calc((100% - 300px)/2);
+    top: 60%;
 }
 
 /* ====== 사이트 홍보 영역 끝 ===== */
