@@ -1,6 +1,6 @@
 /* ===== 메인 시작 ===== */
 main {
-    background-color: white;
+    /* background-color: white; */
     margin-top: 50px;
 }
 
@@ -55,6 +55,9 @@ main .bestseller_wrap {
     margin-top: 50px;
     padding: 50px 0;
     text-align: center;
+    border: 1px solid #ffa900;
+    border-radius: 20px;
+    background-color: #fff;
 }
 
 main .bestseller_wrap h1 {
@@ -136,18 +139,7 @@ main .bestseller_item .present_pr {
 
 
 
-/* ===== 하단 배너 영역 시작 ===== */
-/* 사이트 홍보 */
-main .promotion_wrap {
-    height: 500px;
-    background: url(https://shop-phinf.pstatic.net/20220630_96/1656562559901gCvqO_JPEG/C5A9B1E2BAAFC8AFsubtop_product.jpg)
-                0/100% no-repeat;
-    /* background-position: right; */
-    object-fit: cover;
-}
-
-
-/* 사용자 후기 */
+/* ===== 사용자 리뷰 영역 시작 ===== */
 main .user_review_wrap {
     margin: 20px 0;
     padding: 50px;
@@ -205,7 +197,99 @@ main .user_review_wrap:hover .user_review1 img {
     }
 }
 
-/* ===== 하단 슬라이드 배너 영역 끝 ===== */
+/* ===== 사용자 리뷰 영역 끝 ===== */
+
+
+/* ====== 사이트 홍보 영역 시작 ===== */
+/* promotion1 사이트 특징 홍보 */
+main .promotion1_wrap {
+    box-sizing: border-box;
+    background-color: #ffe344aa;
+    height: 1000px;
+    padding: 100px;
+    padding-left: 140px;
+    margin: 50px 0;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .promotion1 h2 {
+    white-space: pre-line;
+    font-size: 4em;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+main .promotion1:hover h2 {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main .promotion1 img {
+    width: 200px;
+    height: 200px;
+    margin: 30px 80px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* promotion2 사진 배너 홍보 */
+main .promotion2 {
+    height: 400px;
+    background: url(https://shop-phinf.pstatic.net/20220630_96/1656562559901gCvqO_JPEG/C5A9B1E2BAAFC8AFsubtop_product.jpg) 0/100% no-repeat;
+    position: relative;
+}
+
+main .promotion2 .promotion2_title,
+main .promotion2 span {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+main .promotion2 .promotion2_title {
+    font-size: 40px;
+    left: 0;
+    top: 25%;
+}
+
+main .promotion2 span {
+    left: 0;
+    top: 50%;
+}
+
+main .promotion2 a {
+    position: absolute;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    background-color: #ffa900;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    left: calc((100% - 300px)/2);
+    top: 60%;
+}
+
+/* ====== 사이트 홍보 영역 끝 ===== */
 
 
 /* ===== 동영상 영역 시작 ===== */
