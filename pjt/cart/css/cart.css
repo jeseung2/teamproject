@@ -137,6 +137,7 @@ main table tbody tr td input[type=button] {
     border-radius: 8px;
     cursor: pointer;
     margin: 0 auto;
+    font-family: 'Cafe24SsurroundAir';
 }
 
 main table tbody tr td:nth-child(3) {
