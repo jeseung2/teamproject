@@ -130,10 +130,10 @@ main .right_contents input[type=button] {
 }
 
 main .right_contents input[type=button]:hover {
-    background-color: #fffbee;
-    color: #ffa900;
-
+    transition: .5s;
+    background-color: #ffe344;
 }
+
 
 main .right_contents table tr .agree_all,
 main .right_contents table tr .agree_selection {
