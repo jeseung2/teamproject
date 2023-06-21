@@ -9,6 +9,10 @@ main .title a {
     padding: 3px;
 }
 
+main .title a[href="#"] {
+    border-bottom: 5px solid #ffa900;
+}
+
 main .title a:hover {
     border-bottom: 5px solid #ffa900;
 }
@@ -23,19 +27,32 @@ main table {
     border-collapse: collapse;
 }
 
-tr {
+main table tr {
     background-color: white;
+}
+
+main table th:nth-child(1),
+main table th:nth-child(5),
+main table th:nth-child(6) {
+    width: 7%;
 }
 
 main table th,
 td {
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1px solid rgb(210, 210, 210);
 }
 
+main table td {
+    height: 230px;
+}
+
 main table tbody td img {
+    object-fit: cover;
     width: 200px;
     height: 200px;
+    border-radius: 10px;
+    vertical-align: middle;
 }
 
 main table tbody td h4 {
@@ -45,8 +62,9 @@ main table tbody td h4 {
 
 main table tbody td p {
     white-space: pre-line;
+    height: 95px;
+    overflow: hidden;
 }
-
 
 table {
     width: 100%;
