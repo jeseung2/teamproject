@@ -36,6 +36,14 @@ main .left_contents ul>li {
     cursor: pointer;
 }
 
+main .left_contents ul>li a {
+    padding: 0 8px;
+}
+
+main .left_contents ul>li a:hover {
+    border-bottom: 5px solid #ffa900;
+}
+
 main .right_contents {
     float: right;
     width: 58%;
