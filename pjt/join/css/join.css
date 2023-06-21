@@ -41,7 +41,7 @@ main .left_contents ul>li a {
 }
 
 main .left_contents ul>li a:hover {
-    border-bottom: 5px solid #ffa900;
+    color: #ffa900;
 }
 
 main .right_contents {
