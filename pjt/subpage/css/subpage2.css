@@ -87,14 +87,14 @@ section>#section4>nav>ul>li:nth-child(4) {
 /*========================================= toparea =========================================*/
 
 .top_area {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     border-top: 2px solid #ffa900;
 }
 
 section .img_area,
 section .info_area {
-    padding: 1em;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -125,7 +125,7 @@ section .img_area>div {
 
 .info_area table {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 1em;
 }
 
 .info_area table tr,
@@ -147,6 +147,14 @@ section .img_area>div {
 
 .present_pr {
     font-weight: bold;
+}
+
+.info_area div {
+    padding: 1em;
+}
+
+.info_area div input {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /*========================================= 상품상세정보 =========================================*/
