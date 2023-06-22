@@ -9,6 +9,7 @@ main {
     padding: 0 50px;
     border-top: 2px solid #ffa900;
     border-bottom: 2px solid #ffa900;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main .left_contents {
