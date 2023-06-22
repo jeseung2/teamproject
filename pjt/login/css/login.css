@@ -17,12 +17,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/bg2.jfif) no-repeat;
 }
 
 .img_container img {
-  width: 749px;
-  height: 641px;
+  /* width: 749px;
+  height: 641px; */
   box-sizing: border-box;
 }
 
