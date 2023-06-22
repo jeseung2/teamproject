@@ -14,78 +14,88 @@
 </head>
 
 <body>
+    <div id="wrap">
 
-    <header>
-        <nav>
-            <div class="menu_list">
-                <a href="../../main/html/index.html">
-                    <img src="../../../common_page/image/header/logo.png" alt="로고" class="logo">
-                </a>
-                <input type="search" name="search" id="search" placeholder="검색어를 입력해주세요.">
+        <header>
+            <nav>
+                <div class="menu_list">
+                    <a href="../../main/html/index.html">
+                        <img src="../../../common_page/image/header/logo.png" alt="로고" class="logo">
+                    </a>
+                    <input type="search" name="search" id="search" placeholder="검색어를 입력해주세요.">
 
-                <ul>
+                    <ul>
+                        <li>
+                            <a href="./login.html"><img src="../../../common_page/image/header/login_img.png" alt="">
+                                로그인</a>
+                        </li>
+                        <li>
+                            <a href="../../join/html/profile.html"><img
+                                    src="../../../common_page/image/header/join_img.png" alt="">
+                                회원가입</a>
+                        </li>
+                        <li>
+                            <a href="../../cart/html/cart.html"><img
+                                    src="../../../common_page/image/header/cart_img.png" alt=""> 장바구니</a>
+                        </li>
+                        <li>
+                            <a href="../../board/html/board.html"><img
+                                    src="../../../common_page/image/header/customer_service_img.png" alt="">
+                                고객센터</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="gnb_list">
                     <li>
-                        <a href="./login.html"><img src="../../../common_page/image/header/login_img.png" alt="">
-                            로그인</a>
+                        <a href="#"><img src="../../../common_page/image/header/food_img.png" alt="">간식&#183;사료</a>
                     </li>
                     <li>
-                        <a href="../../join/html/profile.html"><img src="../../../common_page/image/header/join_img.png"
-                                alt="">
-                            회원가입</a>
+                        <a href="../../subpage/html/subpage1_toy.html"><img
+                                src="../../../common_page/image/header/toy_img.png" alt="">장난감</a>
                     </li>
                     <li>
-                        <a href="../../cart/html/cart.html"><img src="../../../common_page/image/header/cart_img.png"
-                                alt=""> 장바구니</a>
+                        <a href="#"><img src="../../../common_page/image/header/living_img.png" alt="">리빙&#183;패션</a>
                     </li>
                     <li>
-                        <a href="../../board/html/board.html"><img
-                                src="../../../common_page/image/header/customer_service_img.png" alt="">
-                            고객센터</a>
+                        <a href="#"><img src="../../../common_page/image/header/stroll_img.png" alt="">산책&#183;케어</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../../../common_page/image/header/community_img.png" alt="">커뮤니티</a>
                     </li>
                 </ul>
+            </nav>
+        </header>
+        <!-- ========================================  로그인 ====================================================== -->
+        <main>
+            <div class="img_container">
+                <img src="../img/bg3.png" alt="">
             </div>
 
-            <ul class="gnb_list">
-                <li>
-                    <a href="#"><img src="../../../common_page/image/header/food_img.png" alt="">간식&#183;사료</a>
-                </li>
-                <li>
-                    <a href="../../subpage/html/subpage1_toy.html"><img
-                            src="../../../common_page/image/header/toy_img.png" alt="">장난감</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../../common_page/image/header/living_img.png" alt="">리빙&#183;패션</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../../common_page/image/header/stroll_img.png" alt="">산책&#183;케어</a>
-                </li>
-                <li>
-                    <a href="#"><img src="../../../common_page/image/header/community_img.png" alt="">커뮤니티</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- ========================================  로그인 ====================================================== -->
-    <main>
-        <div class="container">
-            <h2>LogIn</h2>
-            <form>
-                <input type="text" placeholder="아이디" required>
-                <input type="password" placeholder="비밀번호" required>
 
-                <label>
-                    <input type="checkbox" name="idsave" value="idsave">
-                </label> 아이디 저장
+            <div class="login_container">
 
-                <input type="submit" value="로그인">
-            </form>
+                <div class="login_box">
+                    <h2>LogIn</h2>
+                    <form>
+                        <input type="text" placeholder="아이디" required>
+                        <input type="password" placeholder="비밀번호" required>
+                        <br>
+                        <input type="checkbox" name="idsave" value="idsave">
+                        <label for="idsave" name="idsave" id="idsave">
+                            아이디 저장
+                        </label>
 
-        </div>
+                        <div class="idpwfind">
+                            <a href="#">아이디 찾기</a> |
+                            <a href="#">비밀번호 찾기</a>
+                        </div>
+                    </form>
+                    <input type="submit" value="로그인">
 
-        <div class="idpwfind">
-            <a href="#">아이디 찾기</a> |
-            <a href="#">비밀번호 찾기</a>
-        </div>
+                </div>
+            </div>
+
 
 
 
@@ -111,7 +121,7 @@
 
 
 
-
+</div>
 
 </body>
 
