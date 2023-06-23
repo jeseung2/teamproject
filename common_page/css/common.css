@@ -19,6 +19,7 @@ body {
     margin: 50px 0;
     text-align: center;
     font-size: 26px;
+    font-weight: bold;
 }
 
 input[type=button] {
