@@ -1,7 +1,7 @@
 main {
-    width: 100%;
+    /* width: 100%;
     min-width: 1200px;
-    max-width: 1500px;
+    max-width: 1500px; */
     box-sizing: border-box;
     margin: 50px auto;
     background-color: #fff;
@@ -10,6 +10,22 @@ main {
     border-top: 2px solid #ffa900;
     border-bottom: 2px solid #ffa900;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .img_container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .img_container img {
+    /* width: 750px;
+    height: 641px; */
+    box-sizing: border-box;
 }
 
 main .left_contents {
@@ -22,13 +38,6 @@ main .left_contents {
     border-right: 1px solid #ffa900;
     text-align: center;
 }
-
-/* 
-main .left_contents ul>li.checking {
-    color: #929292;
-    font-size: 18px;
-    line-height: 50px;
-} */
 
 main .left_contents ul>li {
     color: #999;
@@ -56,6 +65,18 @@ main .right_contents {
 
 main .right_contents figure {
     height: 450px;
+}
+
+main .right_contents figure ul {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+}
+
+main .right_contents figure ul>li a:hover {
+    color: #ffa900;
 }
 
 main .right_contents figure figcaption {
