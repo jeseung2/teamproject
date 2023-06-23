@@ -14,13 +14,10 @@ main .sort * {
     display: inline-block;
 }
 
-main .sort_wrap {
+main .sort {
     padding: 15px;
     border-top: #ffa900 1px solid;
     border-bottom: #ffa900 1px solid;
-}
-
-main .sort {
     display: flex;
     justify-content: space-between;
 }
