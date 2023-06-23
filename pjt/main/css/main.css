@@ -92,18 +92,13 @@ main .bestseller {
     margin: 50px 150px;
     height: 300px;
     display: flex;
-    justify-content: space-between;
 }
 
 main .bestseller_item {
-    display: flex;
     box-sizing: border-box;
     width: 250px;
     height: 250px;
-    margin: 10px auto;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
 }
 
 main .bestseller_item img {
@@ -250,21 +245,25 @@ main .promotion1_wrap {
     background-color: #ffe344aa;
     height: 1000px;
     padding: 100px;
-    padding-left: 140px;
     margin: 50px 0;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+}
 
-    display: flex;
+main .promotion1 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100%;
     align-items: center;
-    justify-content: center;
 }
 
 main .promotion1 h2 {
     white-space: pre-line;
     font-size: 4em;
     line-height: 1.5em;
-    padding: 40px 0;
+    padding: 40px;
+
+    align-self: start;
 }
 
 main .promotion1:hover h2 {
@@ -285,16 +284,13 @@ main .promotion1:hover h2 {
     }
 }
 
-main .promotion1_1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+main .promotion1_1,
+main .promotion1_2 {
+    justify-self: center;
 }
 
 main .promotion1 img {
-    width: 20%;
-    margin: 30px 50px;
+    margin: 0 4em;
     background-color: #fff;
     border-radius: 20px;
 }
