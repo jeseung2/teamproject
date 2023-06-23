@@ -77,32 +77,51 @@
                     <ul>
                         <li><a href="../html/profile.html">Proflie</a></li>
                         <li><a href="../html/details.html">Details</a></li>
-                        <li><a class="checking" href="../html/adress.html">Adress</a></li>
+                        <li><a class="checking" href="../html/information.html">Information</a></li>
                         <li><a href="../html/agree.html">Agree</a></li>
                     </ul>
                     <table>
                         <form action="">
                             <tr>
                                 <th>
-                                    <label for="user_adress">주소</label>
+                                    <label for="ani_name">반려동물 이름</label>
                                 </th>
                                 <td>
-                                    <input type="adress" name="useruser_adress" placeholder="도로명 주소를 입력해주세요"
-                                        required="required" minlength="3">
+                                    <input type="text" name="ani_name">
                                 </td>
-
                             </tr>
-
                             <tr>
-                                <th><label for="user_adress2">상세주소 </label></th>
+                                <th>
+                                    <label for="ani_bday">반려동물 생일</label>
+                                </th>
                                 <td>
-                                    <input type="adress" name="user_adress22" required="required" minlength="3">
+                                    <input type="text" name="ani_bday" placeholder="ex) 20230203">
                                 </td>
                             </tr>
+                            <tr>
+                                <th>
+                                    <label for="ani_bday">반려동물 성별</label>
+                                </th>
+                                <td class="ani_bday">
+                                    <input type="radio" name="boy" id="boy">남아
+                                    <input type="radio" name="girl" id="girl">여아
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <label for="ani_bday">반려동물 특성</label>
+                                </th>
+                                <td class="ani_bday">
+                                    <textarea name="" id="" cols="84" rows="3"></textarea>
+                                </td>
+                            </tr>
+
+
+
                         </form>
                     </table>
                 </figure>
-                <a href="./adress.html">
+                <a href="./agree.html">
                     <input type="button" value="Next">
                 </a>
             </div>

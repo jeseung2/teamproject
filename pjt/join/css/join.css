@@ -1,7 +1,4 @@
 main {
-    /* width: 100%;
-    min-width: 1200px;
-    max-width: 1500px; */
     box-sizing: border-box;
     margin: 50px auto;
     background-color: #fff;
@@ -11,10 +8,12 @@ main {
     border-bottom: 2px solid #ffa900;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
+/*==================================================================*/
+/* main layout */
 main .img_container {
     width: 50%;
     display: flex;
@@ -22,62 +21,39 @@ main .img_container {
     align-items: center;
 }
 
-main .img_container img {
-    /* width: 750px;
-    height: 641px; */
-    box-sizing: border-box;
-}
-
-main .left_contents {
-    float: left;
-    width: 23%;
-    margin-top: 100px;
-    height: 350px;
-    padding: 50px;
-    display: block;
-    border-right: 1px solid #ffa900;
-    text-align: center;
-}
-
-main .left_contents ul>li {
-    color: #999;
-    font-size: 20px;
-    line-height: 80px;
-    cursor: pointer;
-}
-
-main .left_contents ul>li a {
-    padding: 0 8px;
-}
-
-main .left_contents ul>li a:hover {
-    color: #ffa900;
-}
-
 main .right_contents {
-    float: right;
-    width: 58%;
-    min-width: 500px;
-    height: 500px;
-    padding: 50px;
+    width: 50%;
     margin-top: 50px;
 }
+
+
+/*==================================================================*/
+/* 회원가입 순서 header */
 
 main .right_contents figure {
     height: 450px;
 }
 
 main .right_contents figure ul {
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     font-size: 20px;
     display: flex;
+    margin-bottom: 50px;
 }
 
 main .right_contents figure ul>li a:hover {
     color: #ffa900;
 }
+
+main .right_contents figure ul>li:not(:last-child)::after {
+    content: "　>　";
+}
+
+
+/*==================================================================*/
+/* 회원가입 공통 스타일 */
 
 main .right_contents figure figcaption {
     font-size: 26px;
@@ -89,16 +65,20 @@ main .right_contents figure figcaption {
 
 main .right_contents figure table {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .right_contents figure table tr {
     padding: 5px 0 5px 0;
-    width: 1000px;
+    width: 600px;
     display: block;
 }
 
 main .right_contents figure table tr th {
-    display: block;
+    display: flex;
+    justify-content: start;
     width: 100%;
 }
 
@@ -107,52 +87,36 @@ main .right_contents figure table tr th label {
     color: #929292;
     width: 100%;
     height: 20px;
-    padding: 10px 0 3px;
-    display: block;
+    padding: 10px 0 5px;
     text-align: left;
     font-weight: normal;
     line-height: 28px;
 }
 
 main .right_contents figure table tr td {
-    display: block;
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 main .right_contents table tr td input,
 main .right_contents table tr td select {
     font-size: 16px;
     color: #929292;
-    width: 80%;
+    width: 100%;
+    max-width: 700px;
     outline: none;
     padding: 7px;
     border-radius: 5px;
     border: 1px solid #929292;
-    /* border: 1px solid #ffa900; */
 }
-
-main .right_contents table tr td .user_email,
-main .right_contents table tr td .domain_list {
-    width: 39.5%;
-    display: inline-block;
-}
-
-main .right_contents table tr .user_birth select {
-    width: 26.9%;
-    display: inline-block;
-}
-
-/* main .right_contents table tr td .domain-list {
-    padding: 7px;
-    height: 37px;
-} */
 
 main .right_contents input[type=button] {
     width: 100px;
     height: 50px;
     border: none;
     border: 1px solid #ffa900;
-    /* color: #ffa900; */
     background-color: #fff;
     border-radius: 8px;
     cursor: pointer;
@@ -165,6 +129,32 @@ main .right_contents input[type=button]:hover {
 }
 
 
+/*==================================================================*/
+/* profile */
+
+main .right_contents table tr td .user_email,
+main .right_contents table tr td .domain_list {
+    width: 48.5%;
+}
+
+main .right_contents table tr .user_birth select {
+    width: 33%;
+}
+
+/*==================================================================*/
+/* information */
+main .right_contents table tr .ani_bday {
+    float: left;
+    white-space: nowrap;
+    margin: 10px 0;
+}
+
+main .right_contents table tr .ani_bday input:nth-child(2) {
+    margin-left: 50px;
+}
+
+/*==================================================================*/
+/* agree */
 main .right_contents table tr .agree_all,
 main .right_contents table tr .agree_selection {
     margin-bottom: 20px;
@@ -172,15 +162,13 @@ main .right_contents table tr .agree_selection {
 
 main .right_contents table tr .agree_all input[type=checkbox],
 main .right_contents table tr .agree_selection input[type=checkbox] {
-    float: left;
-    margin-top: 15px;
-    display: inline-block;
+    margin-top: 12px;
     margin-right: 10px;
 }
 
 main .right_contents table tr .agree_text {
-    width: 80%;
-    height: 100px;
+    width: 100%;
+    height: 120px;
     overflow: auto;
     padding: 15px;
     box-sizing: border-box;
