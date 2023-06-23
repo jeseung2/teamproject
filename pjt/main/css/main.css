@@ -9,6 +9,7 @@ main {
 main .banner_wrap {
     height: 600px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
 
 main .banner {
@@ -58,6 +59,7 @@ main .bestseller_wrap {
     border: 1px solid #ffa900;
     border-radius: 20px;
     background-color: #fff;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
 
 main .bestseller_wrap h1 {
@@ -74,7 +76,7 @@ main .bestseller_list h2:hover {
 
 main .bestseller_list h2 {
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.2em;
     background-color: lemonchiffon;
     width: 130px;
     line-height: 50px;
@@ -143,28 +145,28 @@ main .bestseller_item .present_pr {
 main .user_review_wrap {
     margin: 20px 0;
     padding: 50px;
-    height: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
 }
 
-.user_review_wrap>div {
+.user_review1 {
     height: 100%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
 }
 
 main .user_review1 img:nth-of-type(1) {
-    width: 600px;
-    position: absolute;
-    left: 200px;
-    top: 100px;
+    width: 90%;
+    justify-self: end;
     animation-name: left_to_right;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
 }
 
 main .user_review1 img:nth-of-type(2) {
-    position: absolute;
-    width: 250px;
-    right: 200px;
-    top: 30px;
+    width: 60%;
+    justify-self: center;
     animation-name: right_to_left;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
@@ -179,21 +181,21 @@ main .user_review_wrap:hover .user_review1 img {
 
 @keyframes left_to_right {
     from {
-        margin-left: -30px;
+        margin-right: 0;
     }
 
     to {
-        margin-right: 80px;
+        margin-right: 60px;
     }
 }
 
 @keyframes right_to_left {
     from {
-        margin-right: -30px;
+        margin-left: 0;
     }
 
     to {
-        margin-left: 80px;
+        margin-left: 150px;
     }
 }
 
@@ -201,6 +203,47 @@ main .user_review_wrap:hover .user_review1 img {
 
 
 /* ====== 사이트 홍보 영역 시작 ===== */
+/* promotion2 사진 배너 홍보 */
+main .promotion2 {
+    height: 400px;
+    background: url(https://shop-phinf.pstatic.net/20220630_96/1656562559901gCvqO_JPEG/C5A9B1E2BAAFC8AFsubtop_product.jpg) 0/100% no-repeat;
+    position: relative;
+}
+
+main .promotion2 .promotion2_title,
+main .promotion2 span {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+main .promotion2 .promotion2_title {
+    font-size: 2.5em;
+    left: 0;
+    top: 25%;
+}
+
+main .promotion2 span {
+    left: 0;
+    top: 50%;
+}
+
+main .promotion2 a {
+    position: absolute;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    background-color: #ffa900;
+    text-align: center;
+    line-height: 50px;
+    left: calc((100% - 300px)/2);
+    top: 60%;
+}
+
+/* 커뮤니티 홍보, 이벤트 영역 */
+
+
 /* promotion1 사이트 특징 홍보 */
 main .promotion1_wrap {
     box-sizing: border-box;
@@ -210,6 +253,7 @@ main .promotion1_wrap {
     padding-left: 140px;
     margin: 50px 0;
     border-radius: 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 
     display: flex;
     align-items: center;
@@ -220,7 +264,7 @@ main .promotion1 h2 {
     white-space: pre-line;
     font-size: 4em;
     line-height: 1.5em;
-    margin-bottom: 50px;
+    padding: 40px 0;
 }
 
 main .promotion1:hover h2 {
@@ -241,53 +285,20 @@ main .promotion1:hover h2 {
     }
 }
 
+main .promotion1_1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 main .promotion1 img {
-    width: 200px;
-    height: 200px;
-    margin: 30px 80px;
+    width: 20%;
+    margin: 30px 50px;
     background-color: #fff;
-    padding: 20px;
     border-radius: 20px;
 }
 
-/* promotion2 사진 배너 홍보 */
-main .promotion2 {
-    height: 400px;
-    background: url(https://shop-phinf.pstatic.net/20220630_96/1656562559901gCvqO_JPEG/C5A9B1E2BAAFC8AFsubtop_product.jpg) 0/100% no-repeat;
-    position: relative;
-}
-
-main .promotion2 .promotion2_title,
-main .promotion2 span {
-    position: absolute;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-}
-
-main .promotion2 .promotion2_title {
-    font-size: 40px;
-    left: 0;
-    top: 25%;
-}
-
-main .promotion2 span {
-    left: 0;
-    top: 50%;
-}
-
-main .promotion2 a {
-    position: absolute;
-    color: #fff;
-    width: 300px;
-    height: 50px;
-    background-color: #ffa900;
-    text-align: center;
-    line-height: 50px;
-    font-size: 16px;
-    left: calc((100% - 300px)/2);
-    top: 60%;
-}
 
 /* ====== 사이트 홍보 영역 끝 ===== */
 
@@ -303,6 +314,7 @@ main .video {
     margin: auto;
     width: 80%;
     height: 600px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
     position: relative;
 }
 

@@ -9,6 +9,7 @@ main {
     padding: 0 50px;
     border-top: 2px solid #ffa900;
     border-bottom: 2px solid #ffa900;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main .left_contents {
@@ -34,6 +35,14 @@ main .left_contents ul>li {
     font-size: 20px;
     line-height: 80px;
     cursor: pointer;
+}
+
+main .left_contents ul>li a {
+    padding: 0 8px;
+}
+
+main .left_contents ul>li a:hover {
+    color: #ffa900;
 }
 
 main .right_contents {
@@ -130,10 +139,10 @@ main .right_contents input[type=button] {
 }
 
 main .right_contents input[type=button]:hover {
-    background-color: #fffbee;
-    color: #ffa900;
-
+    transition: .5s;
+    background-color: #ffe344;
 }
+
 
 main .right_contents table tr .agree_all,
 main .right_contents table tr .agree_selection {

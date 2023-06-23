@@ -41,17 +41,16 @@ form {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    margin-bottom: 10px;
-    margin-right: 10px;
-    display: block;
+th {
+    width: 150px;
+    margin: 0 auto;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
 select[id="payment-method"] {
-    width: 100%;
+    width: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -99,7 +98,7 @@ input[type="submit"]:hover {
 table {
     margin-bottom: 40px;
     width: 100%;
-    /* border-top: 1px solid #ffa900; */
+    margin-bottom: 20px;
 }
 
 /*====================================================================== 주문상품 ====================================================================== */
@@ -110,7 +109,6 @@ table {
 
 .desc {
     padding: 10px;
-    box-sizing: border-box;
     text-align: center;
 }
 
