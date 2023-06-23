@@ -20,7 +20,7 @@ main .sort_wrap {
     border-bottom: #ffa900 1px solid;
 }
 
-main .item .sort {
+main .sort {
     display: flex;
     justify-content: space-between;
 }
