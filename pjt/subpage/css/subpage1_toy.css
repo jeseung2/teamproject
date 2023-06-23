@@ -115,17 +115,16 @@ main .page_shift {
 
 main .page_shift a {
     box-sizing: border-box;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     width: 30px;
-    height: 30px;
+    line-height: 28px;
 
     font-size: 1.2em;
     border: #ffa900 1px solid;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
     margin: 0 5px;
+    padding-top: 3px;
 }
 
 main .page_shift a:hover {
@@ -133,6 +132,6 @@ main .page_shift a:hover {
 }
 
 main .page_shift a[href="#"] {
-    border: #ff9100 3px solid;
+    background-color: #ffe344;
     font-weight: bold;
 }
