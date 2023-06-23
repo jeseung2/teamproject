@@ -1,0 +1,12 @@
+.f>li {
+    float: left;
+}
+
+.q>li>ul {
+    display: none;
+}
+
+.q>li:hover ul {
+    display: block;
+    border: 5px solid;
+}

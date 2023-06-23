@@ -1,176 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogIn page</title>
-    <link rel="stylesheet" href="../../../common_page/css/common.css">
-    <link rel="stylesheet" href="../../../common_page/css/reset.css">
-    <link rel="stylesheet" href="../../../common_page/css/header.css">
-    <link rel="stylesheet" href="../css/join.css">
-
+    <title>리스트 만들기</title>
+    <link rel="stylesheet" type="text/css" href="../css/sample.css" />
+    <link rel="stylesheet" type="text/css" href="../../../common_page/css/reset.css" />
 </head>
 
 <body>
-    <div id="wrap">
+    <h1>ul li 리스트 만들기</h1>
+    <!---기본 메뉴--->
 
-        <header>
-            <nav>
-                <div class="menu_list">
-                    <a href="../../main/html/index.html">
-                        <img src="../../../common_page/image/header/logo.png" alt="로고" class="logo">
-                    </a>
-                    <input type="search" name="search" id="search" placeholder="검색어를 입력해주세요.">
-
-                    <ul>
-                        <li>
-                            <a href="./login.html"><img src="../../../common_page/image/header/login_img.png" alt="">
-                                로그인</a>
-                        </li>
-                        <li>
-                            <a href="../../join/html/profile.html"><img
-                                    src="../../../common_page/image/header/join_img.png" alt="">
-                                회원가입</a>
-                        </li>
-                        <li>
-                            <a href="../../cart/html/cart.html"><img
-                                    src="../../../common_page/image/header/cart_img.png" alt=""> 장바구니</a>
-                        </li>
-                        <li>
-                            <a href="../../board/html/board.html"><img
-                                    src="../../../common_page/image/header/customer_service_img.png" alt="">
-                                고객센터</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <ul class="gnb_list">
-                    <li>
-                        <a href="#"><img src="../../../common_page/image/header/food_img.png" alt="">간식&#183;사료</a>
-                    </li>
-                    <li>
-                        <a href="../../subpage/html/subpage1_toy.html"><img
-                                src="../../../common_page/image/header/toy_img.png" alt="">장난감</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="../../../common_page/image/header/living_img.png" alt="">리빙&#183;패션</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="../../../common_page/image/header/stroll_img.png" alt="">산책&#183;케어</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="../../../common_page/image/header/community_img.png" alt="">커뮤니티</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- ========================================  로그인 ====================================================== -->
-        <div class="title">
-            회원가입
-        </div>
-        <main>
-            <div class="img_container">
-                <img src="../../login/img/bg5.jpg" alt="">
-            </div>
-
-
-            <div class="right_contents">
-                <figure>
-                    <ul style="display:flex; justify-content: space-evenly; align-items: center;
-                    margin-bottom: 20px; font-size: 20px;">
-                        <li>Proflie</li>
-                        <li class="checking">Details</li>
-                        <li>Adress</li>
-                        <li>Agree</li>
-                    </ul>
-                    <table>
-                        <!-- <colgroup>
-                        <col width="100">
-                        <col width="1100px">
-                    </colgroup> -->
-                        <form action="#">
-                            <tr>
-                                <th><label for="user_id">아이디</label></th>
-                                <td><input type="text" name="user_id" placeholder="아이디 입력(6~20자)"></td>
-                            </tr>
-
-                            <tr>
-                                <th><label for="user_password">비밀번호</label></th>
-                                <td><input type="password" name="user_password"
-                                        placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함 8~20자)">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th><label for="user_password2">비밀번호 확인</label></th>
-                                <td><input type="password" name="user_password2" placeholder="비밀번호 재입력"></td>
-                            </tr>
-
-                            <tr>
-                                <th><label for="user_email">이메일 주소</label></th>
-                                <td>
-                                    <input type="email" name="user_email" class="user_email">
-                                    <select class="domain_list" required>
-                                        <option disabled value="" selected>선택</option>
-                                        <option value="naver.com">naver.com</option>
-                                        <option value="hanmail.net">hanmail.net</option>
-                                        <option value="google.com">google.com</option>
-                                        <option value="nate.com">nate.com</option>
-                                        <option value="custom">직접 입력</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                        </form>
-                    </table>
-                </figure>
-                <a href="./adress.html">
-                    <input type="button" value="Next">
-                </a>
-            </div>
-
-
-        </main>
-
-        <footer>
-            <div class="footer_wrap">
-                <div class="ft_info1">
-                    <h3>주문/배송 문의: 010-1254-9478</h3>
-                    <h3>대량 구매 문의: tlsgPwls@gmail.com</h3>
-                    <h3>마케팅 제휴 문의: tlsgPwls@gmail.com</h3>
-                    <p><span>영업시간</span>
-                        월 ~ 금: 9:00 - 18:00
-                        토: 9:00 - 12:00
-                        일요일 및 공휴일: 휴무
-                    </p>
-                </div>
-                <div class="ft_copy">
-                    <a href="../../main/html/index.html">
-                        <img src="../../../common_page/image/header/logo.png" alt="사이트 로고">
-                    </a>
-                    <p>&copy; 2023 웹사이트. All rights reserved.</p>
-                </div>
-                <div class="ft_info2">
-                    <p>상호 : 단독/DanDog 대표 : 연제승
-                        주소 : 경기도 광명시 일직로 43 C동 410호
-                        사업자번호 : 359-86-00037
-                        통신판매업신고 : 2015-경기광명-0274
-                        대표번호 : 02-899-7892 이메일 : gaenim@ysfnc.kr
-                    </p>
-                    <ul>
-                        <li><a href="">회사소개</a></li>
-                        <li><a href="">이용약관</a></li>
-                        <li><a href="">개인정보처리방침</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-
-
-
-
+    <!--- 리스트 --->
+    <ul class="q">
+        <li>
+            Q. 배송 기간은 얼마나 걸릴까요?
+            <ul>
+                <li>A. 2~3일 소요됩니다.</li>
+            </ul>
+        </li>
+    </ul>
 </body>
 
 </html>
