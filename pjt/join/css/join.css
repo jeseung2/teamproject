@@ -54,6 +54,11 @@ main .right_contents figure ul>li:not(:last-child)::after {
 
 /*==================================================================*/
 /* 회원가입 공통 스타일 */
+.required::before {
+    content: "* ";
+    color: red;
+    line-height: ;
+}
 
 main .right_contents figure figcaption {
     font-size: 26px;
