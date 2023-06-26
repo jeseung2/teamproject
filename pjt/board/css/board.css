@@ -70,3 +70,10 @@ input[type="submit"]:hover {
 .question_1:hover+.answer {
   display: table-row;
 }
+
+/*  */
+.board .box_wrap {
+  text-align: center;
+  width: 100%;
+  
+}
