@@ -41,7 +41,7 @@ main .sort p {
 /* ===== 상품 목록 영역 시작 ===== */
 
 main .content_wrap {
-    padding: 20px;
+    padding: 30px 20px 50px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
@@ -53,12 +53,12 @@ main .content_wrap ul {
 
 main .content_wrap li {
     flex: 0 0 25%;
-    margin: 40px 0;
+    margin: 50px 0;
 }
 
 main .content_wrap li a {
     display: block;
-    margin: 0 40px;
+    margin: 0 50px;
 }
 
 main .normal_item {
@@ -89,7 +89,7 @@ main .item_info_wrap h3 {
 main .item_info_wrap .sale_info {
     color: red;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 main .item_info_wrap .normal_pr {
@@ -99,6 +99,46 @@ main .item_info_wrap .normal_pr {
 
 main .item_info_wrap .present_pr {
     font-weight: bold;
+}
+
+main .color span {
+    display: inline-block;
+    margin: 10px 0;
+    width: 20px;
+    height: 7px;
+    border-radius: 5px;
+}
+
+main .color span[title="#1dcc03"] {
+    background-color: #1dcc03;
+}
+
+main .color span[title="#ffeb0c"] {
+    background-color: #ffeb0c;
+}
+
+main .color span[title="#7d7d7d"] {
+    background-color: #7d7d7d;
+}
+
+main .color span[title="#865d10"] {
+    background-color: #865d10;
+}
+
+main .color span[title="#fe60c2"] {
+    background-color: #fe60c2;
+}
+
+main .color span[title="#ff9b0e"] {
+    background-color: #ff9b0e;
+}
+
+main .color span[title="#0ea7ff"] {
+    background-color: #0ea7ff;
+}
+
+main .color span[title="#ff0e0e"] {
+    background-color: #ff0e0e;
 }
 
 /* ===== 상품 목록 영역 끝 ===== */
