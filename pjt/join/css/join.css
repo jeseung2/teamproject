@@ -158,6 +158,16 @@ main .right_contents table tr .ani_bday input:nth-child(2) {
     margin-left: 50px;
 }
 
+main .right_contents table tr .ani_gender input[type=radio] {
+    width: 20px;
+}
+
+main .right_contents table tr .ani_gender label {
+    width: 20px;
+    white-space: nowrap;
+    flex-grow: 10;
+}
+
 /*==================================================================*/
 /* agree */
 main .right_contents table tr .agree_all,
