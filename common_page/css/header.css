@@ -31,9 +31,7 @@ header nav .menu_list input[type=search] {
     border-color: #ffe344;
     width: 350px;
     height: 32px;
-    position: absolute;
-    left: calc((100% - 350px)/2);
-    top: calc((80px - 16px)/2);
+    margin: calc((80px - 32px)/2) 0;
     text-indent: 10px;
     border-bottom: 2px solid #ffa900;
 }
