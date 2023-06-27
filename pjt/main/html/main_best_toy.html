@@ -72,18 +72,42 @@
             <!-- 배너 영역 시작 -->
             <div class="banner_wrap">
                 <div class="banner">
-                    <span class="arrow_left">
-                        <img src="../image/arrow_left.svg" alt="왼쪽 이동">
-                    </span>
-                    <span class="arrow_right">
-                        <img src="../image/arrow_right.svg" alt="오른쪽 이동">
-                    </span>
-                    <img src="../image/main_banner1.jpg" alt="배너 이미지">
-                    <!-- <img src="../main/image/main_banner1.jpg" alt="배너 이미지"> -->
-                    <!-- <img src="../main/image/main_banner1.jpg" alt="배너 이미지"> -->
+                    <div class="slide_section">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+
+                        <div class="silde_wrap">
+                            <ul class="silde_list">
+                                <li>
+                                    <a href="">
+                                        <label for="slide3" class="left"></label>
+                                        <img src="../image/sample.jpg" alt="배너 이미지">
+                                        <label for="slide2" class="right"></label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <label for="slide1" class="left"></label>
+                                        <img src="https://shop-phinf.pstatic.net/20230412_132/1681308834579IXC0M_JPEG/PC_main_bnr_C0CCC1EEC4AD_BFC3B6F3C0CCC7C110kg_C3E2BDC3.jpg?type=m10000_10000"
+                                            alt="">
+                                        <label for="slide3" class="right"></label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <label for="slide2" class="left"></label>
+                                        <img src="https://shop-phinf.pstatic.net/20230508_291/1683539721258Oj7Em_JPEG/PC-1.jpg?type=m10000_10000"
+                                            alt="">
+                                        <label for="slide1" class="right"></label>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
             <!-- 베스트 셀러 영역 시작 -->
             <div class="bestseller_wrap">
                 <h1>베스트 셀러 상품</h1>
