@@ -336,11 +336,6 @@ input[type="button"] {
     box-sizing: border-box;
 }
 
-#section3 .review_wrap {
-    padding: 50px;
-    padding-top: 0;
-}
-
 #section3 .review span:first-child {
     font-size: 20px;
     font-weight: bold;
