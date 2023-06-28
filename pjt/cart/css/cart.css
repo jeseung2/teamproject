@@ -152,7 +152,7 @@ main table tbody tr td input[type=button]:hover {
 
 /*=====================================================================*/
 /* main div*/
-main>p {
+main p {
     line-height: 30px;
     margin: 20px 0 0 0;
     font-weight: bold;
