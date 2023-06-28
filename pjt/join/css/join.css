@@ -57,7 +57,6 @@ main .right_contents figure ul>li:not(:last-child)::after {
 .required::before {
     content: "* ";
     color: red;
-    line-height: ;
 }
 
 main .right_contents figure figcaption {
