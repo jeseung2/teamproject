@@ -23,18 +23,19 @@ section section {
 /*========================================= nav =========================================*/
 
 section>section>nav {
+    display: inline-block;
     width: 100%;
 }
 
-section>section>nav {
+section>section>nav>ul {
     width: 80%;
     margin: 1em auto;
     border-radius: 10px;
     display: flex;
 }
 
-section>section>nav>a {
-    width: 100%;
+section>section>nav>ul>li {
+    width: 25%;
     margin: 1em;
     padding: 1em;
     border: 1px solid #ffa900;
@@ -42,40 +43,39 @@ section>section>nav>a {
     border-radius: 10px;
 }
 
-.fixed_nav>a:hover,
-section>section>nav>a:hover,
+.fixed_nav>ul>li:hover,
+section>section>nav>ul>li:hover,
 input[type="button"]:hover {
     transition: .5s;
     background-color: #ffe344;
 }
 
-section>#section1>nav>a:nth-child(1) {
+section>#section1>nav>ul>li:nth-child(1) {
     background-color: #ffe344;
 }
 
-section>#section2>nav>a:nth-child(2) {
+section>#section2>nav>ul>li:nth-child(2) {
     background-color: #ffe344;
 }
 
-section>#section3>nav>a:nth-child(3) {
+section>#section3>nav>ul>li:nth-child(3) {
     background-color: #ffe344;
 }
 
-section>#section4>nav>a:nth-child(4) {
+section>#section4>nav>ul>li:nth-child(4) {
     background-color: #ffe344;
 }
 
 .fixed_nav {
+    border-radius: 10px;
     text-align: center;
     position: fixed;
     left: 1em;
     bottom: 10%;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
 }
 
-.fixed_nav>a {
+.fixed_nav>ul>li {
     margin: 1em;
     padding: 1em;
     background-color: #ffffff;
@@ -97,11 +97,11 @@ section .img_area {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: .5fr 3.5fr .5fr .5fr;
-    grid-template-areas: 
-    ". . ."
-    ". a ."
-    ". b ."
-    ". . ."
+    grid-template-areas:
+        ". . ."
+        ". a ."
+        ". b ."
+        ". . ."
 }
 
 section .img_area div:first-child {
@@ -140,17 +140,17 @@ section .img_area>div {
     display: grid;
     grid-template-columns: .5fr 1.5fr 3.5fr .5fr;
     grid-template-rows: .5fr repeat(5, 1fr) repeat(3, .5fr);
-    grid-template-areas: 
-    ". . . ."
-    ". a b ."
-    ". c d ."
-    ". e f ."
-    ". g h."
-    ". i j ."
-    /* ". . . ." */
-    ". k k ."
-    ". l l ."
-    ". . . .";
+    grid-template-areas:
+        ". . . ."
+        ". a b ."
+        ". c d ."
+        ". e f ."
+        ". g h."
+        ". i j ."
+        /* ". . . ." */
+        ". k k ."
+        ". l l ."
+        ". . . .";
 }
 
 .info_area div {
@@ -170,36 +170,47 @@ section .img_area>div {
 .info_area div:nth-child(1) {
     grid-area: a;
 }
+
 .info_area div:nth-child(2) {
     grid-area: b;
 }
+
 .info_area div:nth-child(3) {
     grid-area: c;
 }
+
 .info_area div:nth-child(4) {
     grid-area: d;
 }
+
 .info_area div:nth-child(5) {
     grid-area: e;
 }
+
 .info_area div:nth-child(6) {
     grid-area: f;
 }
+
 .info_area div:nth-child(7) {
     grid-area: g;
 }
+
 .info_area div:nth-child(8) {
     grid-area: h;
 }
+
 .info_area div:nth-child(9) {
     grid-area: i;
 }
+
 .info_area div:nth-child(10) {
     grid-area: j;
 }
+
 .info_area div:nth-child(11) {
     grid-area: k;
 }
+
 .info_area div:nth-child(12) {
     grid-area: l;
 }
@@ -313,7 +324,6 @@ input[type="button"] {
 /*========================================= 상품사용후기 =========================================*/
 
 #section3 {
-    padding: 0;
     padding-top: 0;
     box-sizing: border-box;
 }
@@ -326,7 +336,7 @@ input[type="button"] {
     box-sizing: border-box;
 }
 
-#section3>.review_wrap {
+#section3 .review_wrap {
     padding: 50px;
     padding-top: 0;
 }
