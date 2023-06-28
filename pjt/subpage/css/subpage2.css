@@ -97,11 +97,11 @@ section .img_area {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: .5fr 3.5fr .5fr .5fr;
-    grid-template-areas:
-        ". . ."
-        ". a ."
-        ". b ."
-        ". . ."
+    grid-template-areas: 
+    ". . ."
+    ". a ."
+    ". b ."
+    ". . ."
 }
 
 section .img_area div:first-child {
@@ -140,17 +140,17 @@ section .img_area>div {
     display: grid;
     grid-template-columns: .5fr 1.5fr 3.5fr .5fr;
     grid-template-rows: .5fr repeat(5, 1fr) repeat(3, .5fr);
-    grid-template-areas:
-        ". . . ."
-        ". a b ."
-        ". c d ."
-        ". e f ."
-        ". g h."
-        ". i j ."
-        /* ". . . ." */
-        ". k k ."
-        ". l l ."
-        ". . . .";
+    grid-template-areas: 
+    ". . . ."
+    ". a b ."
+    ". c d ."
+    ". e f ."
+    ". g h."
+    ". i j ."
+    /* ". . . ." */
+    ". k k ."
+    ". l l ."
+    ". . . .";
 }
 
 .info_area div {
