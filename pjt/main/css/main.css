@@ -87,8 +87,6 @@ main .banner {
     transform: translateX(-200%);
 }
 
-
-
 /* ===== 상단 슬라이드 배너 영역 끝 ===== */
 
 
@@ -137,14 +135,14 @@ main .bestseller {
     display: flex;
 }
 
-main .bestseller_item {
+main .bestseller li {
     box-sizing: border-box;
     width: 250px;
     height: 250px;
     margin: auto;
 }
 
-main .bestseller_item img {
+main .bestseller li img {
     box-sizing: border-box;
     border-radius: 10px;
     width: 200px;
@@ -152,27 +150,9 @@ main .bestseller_item img {
     border: 2px solid white;
 }
 
-main .bestseller_item:hover img {
+main .bestseller li:hover img {
     transition: 1s;
     border: solid 2px #ffa900;
-}
-
-main .bestseller_item h3 {
-    margin: 5px 0;
-}
-
-main .bestseller_item .sale_info {
-    color: red;
-    font-weight: bold;
-}
-
-main .bestseller_item .normal_pr {
-    color: gray;
-    text-decoration: line-through;
-}
-
-main .bestseller_item .present_pr {
-    font-weight: bold;
 }
 
 /* ===== 베스트 셀러 영역 끝 ===== */
@@ -241,33 +221,33 @@ main .user_review_wrap:hover .user_review1 img {
 
 
 /* ====== 사이트 홍보 영역 시작 ===== */
-/* promotion2 사진 배너 홍보 */
-main .promotion2 {
+/* 알림받기 배너 홍보 */
+main .notice_banner {
     height: 400px;
     background: url(https://shop-phinf.pstatic.net/20220630_96/1656562559901gCvqO_JPEG/C5A9B1E2BAAFC8AFsubtop_product.jpg) 0/100% no-repeat;
     position: relative;
 }
 
-main .promotion2 .promotion2_title,
-main .promotion2 span {
+main .notice_banner p,
+main .notice_banner span {
     position: absolute;
     color: #fff;
     width: 100%;
     text-align: center;
 }
 
-main .promotion2 .promotion2_title {
+main .notice_banner p {
     font-size: 2.5em;
     left: 0;
     top: 25%;
 }
 
-main .promotion2 span {
+main .notice_banner span {
     left: 0;
     top: 50%;
 }
 
-main .promotion2 a {
+main .notice_banner a {
     position: absolute;
     color: #fff;
     width: 300px;
@@ -283,7 +263,7 @@ main .promotion2 a {
 
 
 /* promotion1 사이트 특징 홍보 */
-main .promotion1_wrap {
+main .promote_wrap {
     box-sizing: border-box;
     background-color: #ffe344aa;
     height: 1000px;
@@ -293,14 +273,14 @@ main .promotion1_wrap {
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
 }
 
-main .promotion1 {
+main .promote {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     height: 100%;
     align-items: center;
 }
 
-main .promotion1 h2 {
+main .promote h2 {
     white-space: pre-line;
     font-size: 4em;
     line-height: 1.5em;
@@ -309,7 +289,7 @@ main .promotion1 h2 {
     align-self: start;
 }
 
-main .promotion1:hover h2 {
+main .promote:hover h2 {
     animation-name: blink;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -327,12 +307,11 @@ main .promotion1:hover h2 {
     }
 }
 
-main .promotion1_1,
-main .promotion1_2 {
+main .promote>div {
     justify-self: center;
 }
 
-main .promotion1 img {
+main .promote img {
     margin: 0 4em;
     background-color: #fff;
     border-radius: 20px;
