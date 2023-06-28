@@ -81,19 +81,17 @@ input[type="submit"]:hover {
   
 }
 
-.box_menu {
+.box_a {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 50px;
+
   width: 8%;
   height: 50px;
   background-color: white;
   border-radius: 50%;
   border: 1px solid;
   border-color: #ffa900;
-}
-
-.box_a {
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 50px;
 }
 
 .checking_box {
